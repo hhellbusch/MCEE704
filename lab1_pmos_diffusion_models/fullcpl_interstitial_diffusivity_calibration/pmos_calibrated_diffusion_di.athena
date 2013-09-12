@@ -1,0 +1,73 @@
+# File: pmos_fermi_diffusion.in
+# author: Henry Hellbusch hlh3364@rit.edu
+# purpose: simulate basic pmos diffusion
+#  and analyze the resulting doping profiles at various steps.
+#
+# diffusion model: fully coupled
+# calibration: interstital in silicon oxide and different diffusitivity 
+#  of boron in SiO2 during steam growth
+
+go athena
+line x loc=0.00 spac=0.10
+line x loc=1.00 spac=0.10
+line y loc=0.00 spac=0.01
+line y loc=5.00 spac=0.01
+init silicon c.phosphor=5.0e14 orientation=100 space.mult=2.0
+
+method grid.oxide=0.01 gridinit.ox=0.01
+method full.cpl
+
+#deafult 4.6e8
+interst silicon /oxide theta.0=6.2e7 weto2
+#default 4.6e8
+interst silicon /oxide theta.0=2e8 dryo2
+
+extract name="====Starting Simulation::Interstitial and diffusivity==="
+implant boron dose=2.0e15 energy=75 tilt=7 rotation=45 crystal
+ 
+extract name="xj1" xj material="Silicon" mat.occno=1 x.val=.5 junc.occno=1
+extract name="rs1" p.sheet.res material="Silicon" mat.occno=1 x.val=.5 region.occno=1
+extract name="dose" area from curve(depth,impurity="Boron" material="Silicon" mat.occno=1 x.val=.5)/10000
+extract name="srp1" curve(depth,srp material="Silicon" mat.occno=1 x.val=.5) outfile="di_extract1.dat"
+
+struct outfile=./structures/di_post_implant.str
+tonyplot
+
+#do the diffusion
+diffus time=30 temp=800 t.final=1100 dryo2
+diffus time=5 temp=1100 dryo2
+#modify diffusivity for steam
+impurity i.boron oxide DIX.0=1
+diffus time=25 temp=1100 weto2
+#return back to default
+impurity i.boron oxide DIX.0=3.16e-4
+diffus time=5 temp=1100 nitro
+diffus time=40 temp=1100 t.final=800 nitro
+
+extract name="Xox_field" thickness material="SiO~2" mat.occno=1 x.val=.5
+extract name="xj2" xj material="Silicon" mat.occno=1 x.val=.5 junc.occno=1
+extract name="rs2" p.sheet.res material="Silicon" mat.occno=1 x.val=.5 region.occno=1
+extract name="dose2" area from curve(depth,impurity="Boron" material="Silicon" mat.occno=1 x.val=.5)/10000
+extract name="srp2" curve(depth,srp material="Silicon" mat.occno=1 x.val=.5) outfile="di_extract2.dat"
+
+
+struct outfile=./structures/di_post_field_ox.str
+tonyplot
+
+etch oxide all
+#grow thin gate oxide
+diffus time=20 temp=800 t.final=1000 dryo2
+diffus time=93 temp=1000 dryo2
+diffus time=5 temp=1000 nitro
+diffus time=40 temp=1000 t.final=800 nitro
+
+extract name="Xox_gate" thickness material="SiO~2" mat.occno=1 x.val=.5
+extract name="xj3" xj material="Silicon" mat.occno=1 x.val=.5 junc.occno=1
+extract name="rs3" p.sheet.res material="Silicon" mat.occno=1 x.val=.5 region.occno=1
+extract name="dose3" area from curve(depth,impurity="Boron" material="Silicon" mat.occno=1 x.val=.5)/100
+extract name="srp3" curve(depth,srp material="Silicon" mat.occno=1 x.val=.5) outfile="di_extract3.dat"
+
+struct outfile=./structures/di_post_gate_ox.str
+tonyplot
+
+quit
