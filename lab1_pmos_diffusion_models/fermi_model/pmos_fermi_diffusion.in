@@ -57,7 +57,7 @@ diffus time=40 temp=1000 t.final=800 nitro
 extract name="Xox_gate" thickness material="SiO~2" mat.occno=1 x.val=.5
 extract name="xj3" xj material="Silicon" mat.occno=1 x.val=.5 junc.occno=1
 extract name="rs3" p.sheet.res material="Silicon" mat.occno=1 x.val=.5 region.occno=1
-extract name="dose3" area from curve(depth,impurity="Boron" material="Silicon" mat.occno=1 x.val=.5)/100
+extract name="dose3" area from curve(depth,impurity="Boron" material="Silicon" mat.occno=1 x.val=.5)/10000
 extract name="srp3" curve(depth,srp material="Silicon" mat.occno=1 x.val=.5) outfile="extract3.dat"
 
 
