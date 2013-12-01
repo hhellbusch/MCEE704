@@ -1,0 +1,17 @@
+go athena
+line x loc=0.00 spac=0.001
+line x loc=1.00 spac=0.001
+line y loc=0.00 spac=0.0001
+line y loc=0.05 spac=0.0001
+extract name ="=h sim arsenic @ 1100 C ===="
+init silicon orientation=100 space.mult=1.0
+deposit oxide thick=0.05 c.arsenic=1.0e21 dy=0.0001
+extract name="pre surfconc for si" surf.conc impurity="Net Doping" material="Silicon" mat.occno=1 x.val=1
+extract name="pre surfconc for sio2" surf.conc impurity="Net Doping" material="SiO~2" mat.occno=1 x.val=1
+diffus time=0.01/60 temp=1100 nitro
+tonyplot
+extract name="post surfconc for si" surf.conc impurity="Net Doping" material="Silicon" mat.occno=1 x.val=1
+extract name="post surfconc for sio2" surf.conc impurity="Net Doping" material="SiO~2" mat.occno=1 x.val=1
+extract name="dose" area from curve(depth,impurity="arsenic" material="Silicon" mat.occno=1 x.val=0.1)/10000
+struct outfile=./structures/interface_trans_coef_arsenic_1100.str
+quit

@@ -1,0 +1,16 @@
+go athena 
+line x loc=0.00 spac=0.001 
+line x loc=1.00 spac=0.001 
+line y loc=0.00 spac=0.001 
+line y loc=1.00 spac=0.001 
+extract name ="-boron SEGREAGATION @ 900 C ="
+init silicon c.boron=1.39e17 orientation=100 space.mult=1.0 
+deposit oxide thick=1.00 c.boron=1.0e18 dy=0.01
+extract name="pre surfconc for si" surf.conc impurity="Net Doping" material="Silicon" mat.occno=1 x.val=1
+extract name="pre surfconc for sio2" surf.conc impurity="Net Doping" material="SiO~2" mat.occno=1 x.val=1
+diffus time=60 temp=900 nitro
+tonyplot
+struct outfile=./structures/seg_trans_coef_boron_900.str
+extract name="post surfconc for si" surf.conc impurity="Net Doping" material="Silicon" mat.occno=1 x.val=1
+extract name="post surfconc for sio2" surf.conc impurity="Net Doping" material="SiO~2" mat.occno=1 x.val=1
+quit

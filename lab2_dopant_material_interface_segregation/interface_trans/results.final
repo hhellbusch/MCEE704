@@ -1,0 +1,582 @@
+==== SIMULATION FOR boron trans=0 
+
+pre surfconc for si=100000 atoms/cm3  X.val=1
+
+pre surfconc for sio2=1e+20 atoms/cm3  X.val=1
+
+post surfconc for si=1.06915e+19 atoms/cm3  X.val=1
+
+post surfconc for sio2=9.99875e+19 atoms/cm3  X.val=1
+
+dose=2.04213e+11   X.val=0.1
+
+==== SIMULATION FOR arsenic tra=0 
+
+==== SIMULATION FOR arsenic tra=0 
+
+pre surfconc for si=100000 atoms/cm3  X.val=1
+
+pre surfconc for sio2=1e+20 atoms/cm3  X.val=1
+
+post surfconc for si=1.06915e+19 atoms/cm3  X.val=1
+
+post surfconc for sio2=9.99875e+19 atoms/cm3  X.val=1
+
+error filling internal structure
+
+ERROR: Can't construct curve.
+
+==== SIMULATION FOR arsenic tra=0 
+
+pre surfconc for si=100000 atoms/cm3  X.val=1
+
+pre surfconc for sio2=1e+20 atoms/cm3  X.val=1
+
+post surfconc for si=1.17053e+19 atoms/cm3  X.val=1
+
+post surfconc for sio2=9.99144e+19 atoms/cm3  X.val=1
+
+error filling internal structure
+
+ERROR: Can't construct curve.
+
+==== SIMULATION FOR arsenic tra=0 
+
+pre surfconc for si=100000 atoms/cm3  X.val=1
+
+pre surfconc for sio2=1e+20 atoms/cm3  X.val=1
+
+post surfconc for si=8.17677e+18 atoms/cm3  X.val=1
+
+post surfconc for sio2=9.95571e+19 atoms/cm3  X.val=1
+
+error filling internal structure
+
+ERROR: Can't construct curve.
+
+==== SIMULATION FOR boron trans=0 
+
+pre surfconc for si=100000 atoms/cm3  X.val=1
+
+pre surfconc for sio2=1e+20 atoms/cm3  X.val=1
+
+post surfconc for si=1.06915e+19 atoms/cm3  X.val=1
+
+post surfconc for sio2=9.99875e+19 atoms/cm3  X.val=1
+
+dose=2.04213e+11   X.val=0.1
+
+==== SIMULATION FOR boron trans=0 
+
+pre surfconc for si=100000 atoms/cm3  X.val=1
+
+pre surfconc for sio2=1e+20 atoms/cm3  X.val=1
+
+post surfconc for si=1.17053e+19 atoms/cm3  X.val=1
+
+post surfconc for sio2=9.99144e+19 atoms/cm3  X.val=1
+
+dose=6.23412e+11   X.val=0.1
+
+==== SIMULATION FOR boron trans=0 
+
+pre surfconc for si=100000 atoms/cm3  X.val=1
+
+pre surfconc for sio2=1e+20 atoms/cm3  X.val=1
+
+post surfconc for si=8.17677e+18 atoms/cm3  X.val=1
+
+post surfconc for sio2=9.95571e+19 atoms/cm3  X.val=1
+
+dose=1.05712e+12   X.val=0.1
+
+==== SIMULATION FOR phosphor tr=0 
+
+pre surfconc for si=100000 atoms/cm3  X.val=1
+
+pre surfconc for sio2=1e+20 atoms/cm3  X.val=1
+
+post surfconc for si=1.06915e+19 atoms/cm3  X.val=1
+
+post surfconc for sio2=9.99875e+19 atoms/cm3  X.val=1
+
+WARNING: Unknown impurity specified, using Net Doping
+
+dose=2.04213e+11   X.val=0.1
+
+==== SIMULATION FOR phosphor tr=0 
+
+=h sim arsenic @ 900 C =====0 
+
+pre surfconc for si=100000 atoms/cm3  X.val=1
+
+pre surfconc for sio2=1e+20 atoms/cm3  X.val=1
+
+post surfconc for si=1.82384e+20 atoms/cm3  X.val=1
+
+post surfconc for sio2=1e+20 atoms/cm3  X.val=1
+
+dose=3.88828e+12   X.val=0.1
+
+=h sim arsenic @ 1000 C =====0 
+
+pre surfconc for si=100000 atoms/cm3  X.val=1
+
+pre surfconc for sio2=1e+20 atoms/cm3  X.val=1
+
+post surfconc for si=8.03462e+19 atoms/cm3  X.val=1
+
+post surfconc for sio2=1e+20 atoms/cm3  X.val=1
+
+dose=4.0734e+12   X.val=0.1
+
+=h sim arsenic @ 1100 C =====0 
+
+pre surfconc for si=100000 atoms/cm3  X.val=1
+
+pre surfconc for sio2=1e+20 atoms/cm3  X.val=1
+
+post surfconc for si=4.18577e+19 atoms/cm3  X.val=1
+
+post surfconc for sio2=1e+20 atoms/cm3  X.val=1
+
+dose=4.41019e+12   X.val=0.1
+
+=h sim boron @ 900 C =====0 
+
+pre surfconc for si=100000 atoms/cm3  X.val=1
+
+pre surfconc for sio2=1e+20 atoms/cm3  X.val=1
+
+post surfconc for si=1.03905e+19 atoms/cm3  X.val=1
+
+post surfconc for sio2=9.98753e+19 atoms/cm3  X.val=1
+
+dose=1.98287e+11   X.val=0.1
+
+=h sim boron @ 1000 C =====0 
+
+pre surfconc for si=100000 atoms/cm3  X.val=1
+
+pre surfconc for sio2=1e+20 atoms/cm3  X.val=1
+
+post surfconc for si=1.10124e+19 atoms/cm3  X.val=1
+
+post surfconc for sio2=9.91475e+19 atoms/cm3  X.val=1
+
+dose=5.85144e+11   X.val=0.1
+
+=h sim boron @ 1100 C =====0 
+
+pre surfconc for si=100000 atoms/cm3  X.val=1
+
+pre surfconc for sio2=1e+20 atoms/cm3  X.val=1
+
+post surfconc for si=7.37789e+18 atoms/cm3  X.val=1
+
+post surfconc for sio2=9.56593e+19 atoms/cm3  X.val=1
+
+dose=9.60316e+11   X.val=0.1
+
+=h sim phosphor @ 900 C =====0 
+
+pre surfconc for si=100000 atoms/cm3  X.val=1
+
+pre surfconc for sio2=1e+20 atoms/cm3  X.val=1
+
+post surfconc for si=1.16169e+20 atoms/cm3  X.val=1
+
+post surfconc for sio2=1e+20 atoms/cm3  X.val=1
+
+WARNING: Unknown impurity specified, using Net Doping
+
+dose=-4.02336e+12   X.val=0.1
+
+=h sim phosphor @ 1000 C =====0 
+
+pre surfconc for si=100000 atoms/cm3  X.val=1
+
+pre surfconc for sio2=1e+20 atoms/cm3  X.val=1
+
+post surfconc for si=6.08096e+19 atoms/cm3  X.val=1
+
+post surfconc for sio2=1e+20 atoms/cm3  X.val=1
+
+WARNING: Unknown impurity specified, using Net Doping
+
+dose=-4.38818e+12   X.val=0.1
+
+=h sim phosphor @ 1100 C =====0 
+
+pre surfconc for si=100000 atoms/cm3  X.val=1
+
+pre surfconc for sio2=1e+20 atoms/cm3  X.val=1
+
+post surfconc for si=2.58159e+19 atoms/cm3  X.val=1
+
+post surfconc for sio2=1e+20 atoms/cm3  X.val=1
+
+WARNING: Unknown impurity specified, using Net Doping
+
+dose=-4.45243e+12   X.val=0.1
+
+=h sim phosphor @ 900 C =====0 
+
+pre surfconc for si=100000 atoms/cm3  X.val=1
+
+pre surfconc for sio2=1e+20 atoms/cm3  X.val=1
+
+post surfconc for si=1.16169e+20 atoms/cm3  X.val=1
+
+post surfconc for sio2=1e+20 atoms/cm3  X.val=1
+
+WARNING: Unknown impurity specified, using Net Doping
+
+dose=-4.02336e+12   X.val=0.1
+
+=h sim phosphor @ 1000 C =====0 
+
+pre surfconc for si=100000 atoms/cm3  X.val=1
+
+pre surfconc for sio2=1e+20 atoms/cm3  X.val=1
+
+=h sim phosphor @ 900 C =====0 
+
+pre surfconc for si=100000 atoms/cm3  X.val=1
+
+pre surfconc for sio2=1e+20 atoms/cm3  X.val=1
+
+post surfconc for si=1.16169e+20 atoms/cm3  X.val=1
+
+post surfconc for sio2=1e+20 atoms/cm3  X.val=1
+
+dose=4.02336e+12   X.val=0.1
+
+=h sim phosphor @ 1000 C =====0 
+
+pre surfconc for si=100000 atoms/cm3  X.val=1
+
+pre surfconc for sio2=1e+20 atoms/cm3  X.val=1
+
+post surfconc for si=6.08096e+19 atoms/cm3  X.val=1
+
+post surfconc for sio2=1e+20 atoms/cm3  X.val=1
+
+dose=4.38818e+12   X.val=0.1
+
+=h sim phosphor @ 1100 C =====0 
+
+pre surfconc for si=100000 atoms/cm3  X.val=1
+
+pre surfconc for sio2=1e+20 atoms/cm3  X.val=1
+
+post surfconc for si=2.58159e+19 atoms/cm3  X.val=1
+
+post surfconc for sio2=1e+20 atoms/cm3  X.val=1
+
+dose=4.45243e+12   X.val=0.1
+
+=h sim arsenic @ 900 C =====0 
+
+=h sim arsenic @ 1000 C =====0 
+
+=h sim arsenic @ 1100 C =====0 
+
+=h sim boron @ 900 C =====0 
+
+=h sim boron @ 1000 C =====0 
+
+=h sim boron @ 1100 C =====0 
+
+=h sim phosphor @ 900 C =====0 
+
+pre surfconc for si=100000 atoms/cm3  X.val=1
+
+pre surfconc for sio2=1e+20 atoms/cm3  X.val=1
+
+post surfconc for si=1.16169e+20 atoms/cm3  X.val=1
+
+post surfconc for sio2=1e+20 atoms/cm3  X.val=1
+
+dose=4.02336e+12   X.val=0.1
+
+=h sim phosphor @ 1000 C =====0 
+
+pre surfconc for si=100000 atoms/cm3  X.val=1
+
+pre surfconc for sio2=1e+20 atoms/cm3  X.val=1
+
+post surfconc for si=6.08096e+19 atoms/cm3  X.val=1
+
+post surfconc for sio2=1e+20 atoms/cm3  X.val=1
+
+dose=4.38818e+12   X.val=0.1
+
+=h sim phosphor @ 1100 C =====0 
+
+pre surfconc for si=100000 atoms/cm3  X.val=1
+
+pre surfconc for sio2=1e+20 atoms/cm3  X.val=1
+
+post surfconc for si=2.58159e+19 atoms/cm3  X.val=1
+
+post surfconc for sio2=1e+20 atoms/cm3  X.val=1
+
+dose=4.45243e+12   X.val=0.1
+
+=h sim arsenic @ 900 C =====0 
+
+=h sim arsenic @ 900 C =====0 
+
+=h sim arsenic @ 900 C =====0 
+
+pre surfconc for si=100000 atoms/cm3  X.val=1
+
+pre surfconc for sio2=1e+21 atoms/cm3  X.val=1
+
+post surfconc for si=1.69068e+20 atoms/cm3  X.val=1
+
+post surfconc for sio2=1e+21 atoms/cm3  X.val=1
+
+dose=4.96785e+12   X.val=0.1
+
+=h sim arsenic @ 1000 C =====0 
+
+pre surfconc for si=100000 atoms/cm3  X.val=1
+
+pre surfconc for sio2=1e+21 atoms/cm3  X.val=1
+
+post surfconc for si=6.63454e+19 atoms/cm3  X.val=1
+
+post surfconc for sio2=1e+21 atoms/cm3  X.val=1
+
+dose=4.98878e+12   X.val=0.1
+
+=h sim arsenic @ 1100 C =====0 
+
+pre surfconc for si=100000 atoms/cm3  X.val=1
+
+pre surfconc for sio2=1e+21 atoms/cm3  X.val=1
+
+post surfconc for si=2.98555e+19 atoms/cm3  X.val=1
+
+post surfconc for sio2=1e+21 atoms/cm3  X.val=1
+
+dose=4.99872e+12   X.val=0.1
+
+=h sim boron @ 900 C =====0 
+
+pre surfconc for si=100000 atoms/cm3  X.val=1
+
+pre surfconc for sio2=1e+21 atoms/cm3  X.val=1
+
+post surfconc for si=5.1531e+19 atoms/cm3  X.val=1
+
+post surfconc for sio2=9.87606e+20 atoms/cm3  X.val=1
+
+dose=2.25259e+12   X.val=0.1
+
+=h sim boron @ 1000 C =====0 
+
+pre surfconc for si=100000 atoms/cm3  X.val=1
+
+pre surfconc for sio2=1e+21 atoms/cm3  X.val=1
+
+post surfconc for si=3.33197e+19 atoms/cm3  X.val=1
+
+post surfconc for sio2=9.18217e+20 atoms/cm3  X.val=1
+
+dose=3.64579e+12   X.val=0.1
+
+=h sim boron @ 1100 C =====0 
+
+pre surfconc for si=100000 atoms/cm3  X.val=1
+
+pre surfconc for sio2=1e+21 atoms/cm3  X.val=1
+
+post surfconc for si=1.90054e+19 atoms/cm3  X.val=1
+
+post surfconc for sio2=6.52684e+20 atoms/cm3  X.val=1
+
+dose=4.46463e+12   X.val=0.1
+
+=h sim phosphor @ 900 C =====0 
+
+pre surfconc for si=100000 atoms/cm3  X.val=1
+
+pre surfconc for sio2=1e+20 atoms/cm3  X.val=1
+
+post surfconc for si=1.16169e+20 atoms/cm3  X.val=1
+
+post surfconc for sio2=1e+20 atoms/cm3  X.val=1
+
+dose=4.02336e+12   X.val=0.1
+
+=h sim phosphor @ 1000 C =====0 
+
+pre surfconc for si=100000 atoms/cm3  X.val=1
+
+pre surfconc for sio2=1e+20 atoms/cm3  X.val=1
+
+post surfconc for si=6.08096e+19 atoms/cm3  X.val=1
+
+post surfconc for sio2=1e+20 atoms/cm3  X.val=1
+
+dose=4.38818e+12   X.val=0.1
+
+=h sim phosphor @ 1100 C =====0 
+
+pre surfconc for si=100000 atoms/cm3  X.val=1
+
+pre surfconc for sio2=1e+20 atoms/cm3  X.val=1
+
+post surfconc for si=2.58159e+19 atoms/cm3  X.val=1
+
+post surfconc for sio2=1e+20 atoms/cm3  X.val=1
+
+dose=4.45243e+12   X.val=0.1
+
+=h sim phosphorus @ 900 C =====0 
+
+pre surfconc for si=100000 atoms/cm3  X.val=1
+
+pre surfconc for sio2=1e+21 atoms/cm3  X.val=1
+
+post surfconc for si=9.60382e+19 atoms/cm3  X.val=1
+
+post surfconc for sio2=1e+21 atoms/cm3  X.val=1
+
+dose=5.00019e+12   X.val=0.1
+
+=h sim phosphorus @ 1000 C =====0 
+
+pre surfconc for si=100000 atoms/cm3  X.val=1
+
+pre surfconc for sio2=1e+21 atoms/cm3  X.val=1
+
+post surfconc for si=4.64655e+19 atoms/cm3  X.val=1
+
+post surfconc for sio2=1e+21 atoms/cm3  X.val=1
+
+dose=5.24489e+12   X.val=0.1
+
+=h sim phosphorus @ 1100 C =====0 
+
+pre surfconc for si=100000 atoms/cm3  X.val=1
+
+pre surfconc for sio2=1e+21 atoms/cm3  X.val=1
+
+post surfconc for si=4.28879e+19 atoms/cm3  X.val=1
+
+post surfconc for sio2=1e+21 atoms/cm3  X.val=1
+
+dose=9.65951e+12   X.val=0.1
+
+=h sim arsenic @ 900 C =====0 
+
+pre surfconc for si=100000 atoms/cm3  X.val=1
+
+pre surfconc for sio2=1e+21 atoms/cm3  X.val=1
+
+post surfconc for si=4.05059e+20 atoms/cm3  X.val=1
+
+post surfconc for sio2=1e+21 atoms/cm3  X.val=1
+
+dose=4.11785e+12   X.val=0.1
+
+=h sim arsenic @ 1000 C =====0 
+
+pre surfconc for si=100000 atoms/cm3  X.val=1
+
+pre surfconc for sio2=1e+21 atoms/cm3  X.val=1
+
+post surfconc for si=1.82194e+20 atoms/cm3  X.val=1
+
+post surfconc for sio2=1e+21 atoms/cm3  X.val=1
+
+dose=4.16859e+12   X.val=0.1
+
+=h sim arsenic @ 1100 C =====0 
+
+pre surfconc for si=100000 atoms/cm3  X.val=1
+
+pre surfconc for sio2=1e+21 atoms/cm3  X.val=1
+
+post surfconc for si=8.46832e+19 atoms/cm3  X.val=1
+
+post surfconc for sio2=1e+21 atoms/cm3  X.val=1
+
+dose=4.18193e+12   X.val=0.1
+
+=h sim boron @ 900 C =====0 
+
+pre surfconc for si=100000 atoms/cm3  X.val=1
+
+pre surfconc for sio2=1e+21 atoms/cm3  X.val=1
+
+post surfconc for si=4.37477e+19 atoms/cm3  X.val=1
+
+post surfconc for sio2=9.98753e+20 atoms/cm3  X.val=1
+
+dose=4.38575e+11   X.val=0.1
+
+=h sim boron @ 1000 C =====0 
+
+pre surfconc for si=100000 atoms/cm3  X.val=1
+
+pre surfconc for sio2=1e+21 atoms/cm3  X.val=1
+
+post surfconc for si=2.96656e+19 atoms/cm3  X.val=1
+
+post surfconc for sio2=9.91478e+20 atoms/cm3  X.val=1
+
+dose=7.40981e+11   X.val=0.1
+
+=h sim boron @ 1100 C =====0 
+
+pre surfconc for si=100000 atoms/cm3  X.val=1
+
+pre surfconc for sio2=1e+21 atoms/cm3  X.val=1
+
+post surfconc for si=1.89929e+19 atoms/cm3  X.val=1
+
+post surfconc for sio2=9.56733e+20 atoms/cm3  X.val=1
+
+dose=1.031e+12   X.val=0.1
+
+=h sim phosphorus @ 900 C =====0 
+
+pre surfconc for si=100000 atoms/cm3  X.val=1
+
+pre surfconc for sio2=1e+21 atoms/cm3  X.val=1
+
+post surfconc for si=2.24083e+20 atoms/cm3  X.val=1
+
+post surfconc for sio2=1e+21 atoms/cm3  X.val=1
+
+dose=4.16314e+12   X.val=0.1
+
+=h sim phosphorus @ 1000 C =====0 
+
+pre surfconc for si=100000 atoms/cm3  X.val=1
+
+pre surfconc for sio2=1e+21 atoms/cm3  X.val=1
+
+post surfconc for si=1.17404e+20 atoms/cm3  X.val=1
+
+post surfconc for sio2=1e+21 atoms/cm3  X.val=1
+
+dose=4.19951e+12   X.val=0.1
+
+=h sim phosphorus @ 1100 C =====0 
+
+pre surfconc for si=100000 atoms/cm3  X.val=1
+
+pre surfconc for sio2=1e+21 atoms/cm3  X.val=1
+
+post surfconc for si=6.06577e+19 atoms/cm3  X.val=1
+
+post surfconc for sio2=1e+21 atoms/cm3  X.val=1
+
+dose=4.41777e+12   X.val=0.1
+

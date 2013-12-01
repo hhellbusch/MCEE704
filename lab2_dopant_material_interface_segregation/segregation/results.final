@@ -1,0 +1,90 @@
+-arsenic SEGREAGATION @ 900 C ==0 
+
+pre surfconc for si=3e+19 atoms/cm3  X.val=1
+
+pre surfconc for sio2=1e+18 atoms/cm3  X.val=1
+
+post surfconc for si=2.9894e+19 atoms/cm3  X.val=1
+
+post surfconc for sio2=1e+18 atoms/cm3  X.val=1
+
+-arsenic SEGREAGATION @ 1000 C =0 
+
+pre surfconc for si=3e+19 atoms/cm3  X.val=1
+
+pre surfconc for sio2=1e+18 atoms/cm3  X.val=1
+
+post surfconc for si=2.99549e+19 atoms/cm3  X.val=1
+
+post surfconc for sio2=1e+18 atoms/cm3  X.val=1
+
+-arsenic SEGREAGATION @ 1100 C =0 
+
+pre surfconc for si=3e+19 atoms/cm3  X.val=1
+
+pre surfconc for sio2=1e+18 atoms/cm3  X.val=1
+
+post surfconc for si=2.99762e+19 atoms/cm3  X.val=1
+
+post surfconc for sio2=1e+18 atoms/cm3  X.val=1
+
+-boron SEGREAGATION @ 900 C ==0 
+
+pre surfconc for si=1.39e+17 atoms/cm3  X.val=1
+
+pre surfconc for sio2=1e+18 atoms/cm3  X.val=1
+
+post surfconc for si=1.39081e+17 atoms/cm3  X.val=1
+
+post surfconc for sio2=9.04777e+15 atoms/cm3  X.val=1
+
+-boron SEGREAGATION @ 1000 C ==0 
+
+pre surfconc for si=2.81e+17 atoms/cm3  X.val=1
+
+pre surfconc for sio2=1e+18 atoms/cm3  X.val=1
+
+post surfconc for si=2.81146e+17 atoms/cm3  X.val=1
+
+post surfconc for sio2=3.14055e+13 atoms/cm3  X.val=1
+
+-boron SEGREAGATION @ 1100 C ==0 
+
+pre surfconc for si=5.15e+17 atoms/cm3  X.val=1
+
+pre surfconc for sio2=1e+18 atoms/cm3  X.val=1
+
+post surfconc for si=5.15033e+17 atoms/cm3  X.val=1
+
+post surfconc for sio2=6.65153e+13 atoms/cm3  X.val=1
+
+-phosphor SEGREAGATION @ 900 C =0 
+
+pre surfconc for si=3e+19 atoms/cm3  X.val=1
+
+pre surfconc for sio2=1e+18 atoms/cm3  X.val=1
+
+post surfconc for si=3e+19 atoms/cm3  X.val=1
+
+post surfconc for sio2=1e+18 atoms/cm3  X.val=1
+
+-phosphor SEGREAGATION @ 1000 C=0 
+
+pre surfconc for si=3e+19 atoms/cm3  X.val=1
+
+pre surfconc for sio2=1e+18 atoms/cm3  X.val=1
+
+post surfconc for si=3e+19 atoms/cm3  X.val=1
+
+post surfconc for sio2=1e+18 atoms/cm3  X.val=1
+
+-phosphor SEGREAGATION @ 1100 C=0 
+
+pre surfconc for si=3e+19 atoms/cm3  X.val=1
+
+pre surfconc for sio2=1e+18 atoms/cm3  X.val=1
+
+post surfconc for si=3e+19 atoms/cm3  X.val=1
+
+post surfconc for sio2=1e+18 atoms/cm3  X.val=1
+
