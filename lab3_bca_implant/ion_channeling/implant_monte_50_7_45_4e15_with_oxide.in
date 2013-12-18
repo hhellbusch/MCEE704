@@ -1,0 +1,14 @@
+go athena
+line x loc=0.00 spac=0.01
+line x loc=2.00 spac=0.01
+line y loc=0.00 spac=0.01
+line y loc=0.50 spac=0.02
+line y loc=1.00 spac=0.05
+line y loc=4.00 spac=0.1
+init silicon c.boron=3e16 orientation=100 space.mult=1.0
+method fermi
+deposit oxide thick=0.025 divisions=10
+implant phosphor dose=4e15 energy=50 tilt=7 rotation=45 crystal monte n.ion=100000 smooth=0.4
+struct outfile=./structures/implant_monte_50_7_45_4e15_with_oxide.str
+extract name="sims" curve(depth,impurity="Phosphorus" material="All" x.val=.5) outfile="./srp_profiles/implant_monte_50_7_45_4e15_with_oxide.dat"
+quit
