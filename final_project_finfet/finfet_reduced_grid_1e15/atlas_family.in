@@ -1,0 +1,68 @@
+init infile=./structures/input_structure.str
+
+############## MOSFET Calculation   ####################
+### BQP.N
+go atlas simflags="-P 1"
+
+set workFunc = 4.85
+set gamma=1.4
+set alpha=0.3
+
+#electrode name=bulk bottom
+
+material material=Silicon eg300=1.1245 affinity=4.05 permitti=11.9 	ml=0.7 mt1=0.7 mt2=0.7 nc300=2.8e19
+material material=Oxide eg300=8.05 affinity=1.00 permittivity=3.9 	ml=0.30 mt1=0.30 mt2=0.30 nc300=2.8e19 nv300=1.04e19 
+material material=Poly eg300=1.1245 affinity=4.05 permitti=11.9 
+structure outf=./structures/dopingDefined.str
+
+contact name=gate work=$'workFunc'
+
+#fermi model
+#srh - shockley read hall recombination
+# hcte.el - non-local effects of energy balance stuff
+# print just tells it to list everything
+
+# fldmob evsatmod - Parallel field dependence with negative differential mobility
+#            the lateral electric field-dependent mobility mod
+# Setting  EVSATMOD=0 implements, the default model for silicon based upon the Caughey-
+#  Thomas field-dependent mobility model in Equation 3-311.
+
+model fermi bqp.n srh ni.fermi hcte.el bqp.ngamma=$gamma bqp.nalpha=$alpha evsatmod=0 fldmob print
+#model fermi srh ni.fermi  print
+
+method maxtrap=6 autonr nblockit=45 bicgst dvlimit=1.0
+
+#family of curves
+solve vdrain=0 name=drain nocurrent
+solve vgate=1.1 name=gate outf=./temp_solves/solve_tmp1
+solve vgate=2.2 name=gate outf=./temp_solves/solve_tmp2
+solve vgate=3.3 name=gate outf=./temp_solves/solve_tmp3
+#solve vgate=4.4 outf=./temp_solves/solve_tmp4
+#solve vgate=5.5 outf=./temp_solves/solve_tmp5
+
+load infile=./temp_solves/solve_tmp1
+log outf=./family/vg_11.log
+solve name=drain vdrain=0 vfinal=0.4 vstep=0.05
+log off
+
+load infile=./temp_solves/solve_tmp2
+log outf=./family/vg_22.log
+solve name=drain vdrain=0 vfinal=0.4 vstep=0.05
+log off
+
+load infile=./temp_solves/solve_tmp3
+log outf=./family/vg_33.log
+solve name=drain vdrain=0 vfinal=0.4 vstep=0.05
+log off
+
+# load infile=./temp_solves/solve_tmp4
+# log outf=./family/vg_44.log
+# solve name=drain vdrain=0 vfinal=0.4 vstep=0.05
+# log off
+
+# load infile=./temp_solves/solve_tmp5
+# log outf=./family/vg_55.log
+# solve name=drain vdrain=0 vfinal=0.4 vstep=0.05
+# log off
+
+quit

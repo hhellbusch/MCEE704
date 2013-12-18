@@ -1,0 +1,252 @@
+# EMCR- 704 - fin-fet
+# Hellbusch
+#
+# Nov. 20, 2013
+# 
+# todo: wire up ability to vary width and gate thickness.
+# 
+go devedit simflags="-3d"
+
+DevEdit version=2.6.0.R # file written Fri Feb 13 2004 15:49:03 GMT+1 (MET)
+
+# 20 nm for width
+set finWidth = 0.02
+set finRatio = 4
+
+#orig 0.03 - dont change this!
+set finLength =.03
+set finHeight = $'finRatio' * $'finWidth'
+
+
+set oxideThickness = 0.003
+set tPoly = 0.007
+
+# originally 1e18
+set finDoping = 1e12
+# originally 1e21
+set sdDoping = 1e21
+
+#some math cause it throws up doing math inside polygon definations
+set fw_ot = $'finWidth'+$'oxideThickness'
+set zero_ot = 0-$'oxideThickness'
+set zero_ot_tp = 0-$'oxideThickness'-$'tPoly'
+set fw_ot_tp = $'finWidth'+$'oxideThickness'+$'tPoly'
+
+set workFunc = 4.85
+
+work.area x1=0 - $'tPoly' - $'oxideThickness' y1=0 - $'tPoly' - $'oxideThickness' x2=$'finWidth'+$'oxideThickness'+$'tPoly' y2=$'finHeight'
+# devedit 2.6.0.R (Thu Dec 12 12:40:19 PST 2002)
+# libSvcFile 1.8.3 (Sat Dec  7 17:56:58 PST 2002)
+# libsflm 4.14.3 (Sat Dec  7 18:02:49 PST 2002)
+# libSDB 1.4.3 (Tue Dec 10 19:51:05 PST 2002)
+# libDW_Version 2.0.0.R (Thu Nov 28 05:44:29 PST 2002)
+
+# active region
+region reg=1 mat=Silicon color=0xffcc00 pattern=0x4 z1=0.01 z2=0.06+$'finLength' \
+	polygon="0,0 $'finWidth',0 $'finWidth',$'finHeight' 0,$'finHeight'"
+constr.mesh region=1 default max.height=0.01 max.width=0.02
+
+
+
+# oxide that wraps around si
+region reg=2 mat="Silicon Oxide" color=0xff pattern=0x2 z1=0.01 z2=0.06+$'finLength' \
+	polygon="$'fw_ot',$'finHeight' $'finWidth',$'finHeight' $'finWidth',0 0,0 0,$'finHeight' $'zero_ot',$'finHeight' $'zero_ot',$'zero_ot' $'fw_ot',$'zero_ot'"
+#          point 1                                    point 2
+#	polygon="0.013,0.015                                0.01,0.015              0.01,0      0,0 0,0.015        -0.003,0.015 -0.003,-0.003                           0.013,-0.003"
+constr.mesh region=2 default max.height=0.001 max.width=0.001
+
+# gate
+region reg=3 name=gate mat=PolySilicon elec.id=1 work.func=0 color=0xffff00 pattern=0x5 z1=0.035 z2=0.035+$'finLength' \
+	polygon="$'fw_ot',$'zero_ot' $'zero_ot',$'zero_ot' $'zero_ot',$'finHeight' $'zero_ot_tp',$'finHeight' $'zero_ot_tp',$'zero_ot_tp' $'fw_ot_tp',$'zero_ot_tp' $'fw_ot_tp',$'finHeight' $fw_ot,$'finHeight'"
+constr.mesh region=3 default max.height=0.01 max.width=0.02
+
+# base
+#region reg=4 mat="Silicon Oxide" color=0xff pattern=0x2 z1=0 z2=0.07+$'finLength' \
+#	polygon="$'zero_ot_tp',$'finHeight' $'oxideThickness',$'finHeight' 0,$'finHeight' $'finWidth',$'finHeight' $'fw_ot',$'finHeight' $'fw_ot_tp',$'finHeight' $'fw_ot_tp',0.045 $'zero_ot_tp',0.045"
+#	polygon="-0.01,0.015 -0.003,0.015 0,0.015 0.01,0.015 0.013,0.015 0.02,0.015 0.02,0.045 -0.01,0.045"
+#constr.mesh region=4 default max.height=0.01 max.width=0.02
+
+# drain contact
+region reg=5 name=drain mat=Aluminum elec.id=2 work.func=0 color=0xffc8c8 pattern=0x7 z1=0 z2=0.01 \
+	polygon="0,0 $'finWidth',0 $'finWidth',$'finHeight' 0,$'finHeight'"
+# polygon="0,0 0.01,0 0.01,0.015 0,0.015"
+constr.mesh region=5 default max.height=0.01 max.width=0.02
+
+# sourc contact
+region reg=6 name=source mat=Aluminum elec.id=3 work.func=0 color=0xffc8c8 pattern=0x7 z1=0.06+$'finLength' z2=0.07+$'finLength' \
+	polygon="0,0 $'finWidth',0 $'finWidth',$'finHeight' 0,$'finHeight'"
+# polygon="0,0 0.01,0 0.01,0.015 0,0.015"
+constr.mesh region=6 default max.height=0.01 max.width=0.02
+
+
+# Set Meshing Parameters
+base.mesh height=0.01 width=0.005
+
+bound.cond !apply max.slope=28 max.ratio=300 rnd.unit=0.0001 line.straightening=1 align.points when=automatic
+
+imp.refine min.spacing=0.02 z=0
+
+constr.mesh max.angle=90 max.ratio=300 max.height=10000 \
+	max.width=10000 min.height=0.0001 min.width=0.0001
+constr.mesh type=Semiconductor default
+constr.mesh type=Insulator default
+constr.mesh type=Metal default
+constr.mesh type=Other default
+
+constr.mesh region=1 default max.height=0.01 max.width=0.02
+constr.mesh region=2 default max.height=0.001 max.width=0.001
+constr.mesh region=3 default max.height=0.01 max.width=0.02
+#constr.mesh region=4 default max.height=0.01 max.width=0.02
+constr.mesh region=5 default max.height=0.01 max.width=0.02
+constr.mesh region=6 default max.height=0.01 max.width=0.02
+constr.mesh id=1 x1=0                 y1=0 x2=$'finWidth'                        y2=$'finHeight'       default max.height=0.02 max.width=0.02
+constr.mesh id=2 x1=0                 y1=0 x2=0.001                              y2=$'finHeight'       default max.height=0.005 max.width=0.005
+constr.mesh id=3 x1=$'finWidth'-0.001 y1=0 x2=$'finWidth'                        y2=$'finHeight'       default max.height=0.005 max.width=0.005
+constr.mesh id=4 x1=0.001             y1=0                  x2=$'finWidth'-0.001 y2=0.001              default max.height=0.005 max.width=0.005
+constr.mesh id=5 x1=0                 y1=$'finHeight'-0.005 x2=$'finWidth'       y2=$'finHeight'+0.001 default max.height=0.008 max.width=0.008
+Mesh Mode=MeshBuild
+
+# might need to modify this for $'finLength' ????
+# only goes to a zplane of 0.1, what happens beyond that?
+# comparing .3 and .5 length it seems ok...
+z.plane z=0		    spacing=0.1
+z.plane z=0.005		spacing=0.1
+z.plane z=0.01		spacing=0.1
+z.plane z=0.012		spacing=0.1
+z.plane z=0.0167 	spacing=0.1
+z.plane z=0.0233 	spacing=0.1
+z.plane z=0.0267 	spacing=0.1
+z.plane z=0.030		spacing=0.1
+z.plane z=0.0315	spacing=0.1
+z.plane z=0.033		spacing=0.1
+#start of gate... inc by 0.006
+z.plane z=0.035		spacing=0.1
+z.plane z=0.041		spacing=0.1
+z.plane z=0.047		spacing=0.1
+z.plane z=0.053		spacing=0.1
+z.plane z=0.059		spacing=0.1
+z.plane z=0.065		spacing=0.1
+#end of gate...
+z.plane z=0.067		spacing=0.1
+z.plane z=0.0685	spacing=0.1
+z.plane z=0.070		spacing=0.1
+z.plane z=0.0733	spacing=0.1
+z.plane z=0.0767	spacing=0.1
+z.plane z=0.0833	spacing=0.1
+z.plane z=0.088		spacing=0.1
+z.plane z=0.090		spacing=0.1
+z.plane z=0.095		spacing=0.1
+z.plane z=0.100		spacing=0.1
+
+z.plane max.spacing=1000000 max.ratio=1.5
+
+structure outf=./structures/quantumex08_0.str
+
+############## MOSFET Calculation   ####################
+### BQP.N
+go atlas simflags="-P 1"
+
+set gamma=1.4
+set alpha=0.3
+
+#electrode name=bulk bottom
+
+doping num=1 p.type uniform conc=$'finDoping'
+doping num=1 gaussian n.type conc=$'sdDoping' y.min=0.0 y.max=$'finHeight' 	z.min=0.010 z.max=0.0233 zlat.char=0.004 char=0.001
+doping num=1 gaussian n.type conc=$'sdDoping' y.min=0.0 y.max=$'finHeight' 	z.min=0.0467+$'finLength' z.max=0.061+$'finLength' zlat.char=0.004 char=0.001
+
+material material=Silicon eg300=1.1245 affinity=4.05 permitti=11.9 	ml=0.7 mt1=0.7 mt2=0.7 nc300=2.8e19
+material material=Oxide eg300=8.05 affinity=1.00 permittivity=3.9 	ml=0.30 mt1=0.30 mt2=0.30 nc300=2.8e19 nv300=1.04e19 
+material material=Poly eg300=1.1245 affinity=4.05 permitti=11.9 
+structure outf=./structures/dopingDefined.str
+
+contact name=gate work=$'workFunc'
+
+#fermi model
+#srh - shockley read hall recombination
+# hcte.el - non-local effects of energy balance stuff
+# print just tells it to list everything
+
+# fldmob evsatmod - Parallel field dependence with negative differential mobility
+#            the lateral electric field-dependent mobility mod
+# Setting  EVSATMOD=0 implements, the default model for silicon based upon the Caughey-
+#  Thomas field-dependent mobility model in Equation 3-311.
+
+#model fermi bqp.n srh ni.fermi hcte.el bqp.ngamma=$gamma bqp.nalpha=$alpha evsatmod=0 fldmob print
+model fermi srh ni.fermi  print
+
+method maxtrap=6 autonr nblockit=45 bicgst dvlimit=1.0
+
+
+#id vg characteristics
+solve init
+structure outf=./structures/fet_off.str
+
+solve vgate=0.4 nocurrent
+
+solve vdrain=0.001 name=drain vstep=0.0005 vfinal=0.01
+
+log outf=./logs/vg_id_low.log
+solve vgate=0.4 name=gate vstep=0.05 vfinal=1.0
+
+extract name="lin_vt" (xintercept(maxslope(curve(abs(v."gate"),abs(i."drain")))) \
+        - abs(ave(v."drain"))/2.0)
+
+output p.quantum band.temp con.band val.band band.par 
+save outf=./structures/low_vdd.str master
+log off
+
+
+# high drain
+solve vdrain=0.01 name=drain vstep=0.05 vfinal=1
+
+log outf=./logs/vg_id_high.log
+solve vgate=0.4 name=gate vstep=0.05 vfinal=1.0
+
+output p.quantum band.temp con.band val.band band.par 
+save outf=./structures/high_vdd.str master
+
+
+extract name="sat_vt" (xintercept(maxslope(curve(v."gate",abs(i."drain")^(1/2)))))
+extract name="sat_ss" 1/slope(maxslope(curve((v."gate"),log10(abs(i."drain")))))*1000
+extract name="Iminsat" min(curve(v."gate",abs(i."drain")))
+extract name="Imaxsat" max(curve(v."gate",abs(i."drain")))
+extract name="I0_sat"  y.val from curve(v."gate",abs(i."drain")) where x.val=0
+extract name="Ivt_sat" y.val from curve(v."gate",abs(i."drain")) where x.val=$sat_vt 
+
+log off
+
+#family of curves
+solve vdrain=0 name=drain no current
+solve vgate=1.1 name=gate outf=./temp_solves/solve_tmp1
+solve vgate=2.2 name=gate outf=./temp_solves/solve_tmp2
+solve vgate=3.3 name=gate outf=./temp_solves/solve_tmp3
+#solve vgate=4.4 outf=./temp_solves/solve_tmp4
+#solve vgate=5.5 outf=./temp_solves/solve_tmp5
+
+load infile=./temp_solves/solve_tmp1
+log outf=./family/vg_11.log
+solve name=drain vdrain=0 vfinal=0.4 vstep=0.05
+log off
+
+load infile=./temp_solves/solve_tmp2
+log outf=./family/vg_22.log
+solve name=drain vdrain=0 vfinal=0.4 vstep=0.05
+log off
+
+load infile=./temp_solves/solve_tmp3
+log outf=./family/vg_33.log
+solve name=drain vdrain=0 vfinal=0.4 vstep=0.05
+log off
+
+# load infile=./temp_solves/solve_tmp4
+# log outf=./family/vg_44.log
+# solve name=drain vdrain=0 vfinal=0.4 vstep=0.05
+# log off
+
+# load infile=./temp_solves/solve_tmp5
+# log outf=./family/vg_55.log
+# solve name=drain vdrain=0 vfinal=0.4 vstep=0.05
+# log off
+
+quit

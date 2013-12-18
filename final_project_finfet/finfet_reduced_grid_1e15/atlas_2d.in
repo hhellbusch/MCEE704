@@ -1,0 +1,62 @@
+init infile=./structures/2d_in.str
+
+############## MOSFET Calculation   ####################
+### BQP.N
+go atlas simflags="-P 1"
+
+set workFunc = 4.85
+set gamma=1.4
+set alpha=0.3
+
+#electrode name=bulk bottom
+
+material material=Silicon eg300=1.1245 affinity=4.05 permitti=11.9 	ml=0.7 mt1=0.7 mt2=0.7 nc300=2.8e19
+material material=Oxide eg300=8.05 affinity=1.00 permittivity=3.9 	ml=0.30 mt1=0.30 mt2=0.30 nc300=2.8e19 nv300=1.04e19 
+material material=Poly eg300=1.1245 affinity=4.05 permitti=11.9 
+
+contact name=gate work=$'workFunc'
+
+#fermi model
+#srh - shockley read hall recombination
+# hcte.el - non-local effects of energy balance stuff
+# print just tells it to list everything
+
+# fldmob evsatmod - Parallel field dependence with negative differential mobility
+#            the lateral electric field-dependent mobility mod
+# Setting  EVSATMOD=0 implements, the default model for silicon based upon the Caughey-
+#  Thomas field-dependent mobility model in Equation 3-311.
+
+model fermi bqp.n srh ni.fermi hcte.el bqp.ngamma=$gamma bqp.nalpha=$alpha evsatmod=0 fldmob print
+#model fermi srh ni.fermi  print
+
+method maxtrap=6 autonr nblockit=45 dvlimit=1.0
+
+
+#id vg characteristics
+solve init
+structure outf=./structures/fet_off_2d.str
+
+solve vdrain=0.001 name=drain vstep=0.0005 vfinal=0.01
+
+log outf=./logs/vg_id_low_2d.log
+solve vgate=0 name=gate vstep=0.05 vfinal=1.0
+
+extract name="lin_vt" (xintercept(maxslope(curve(abs(v."gate"),abs(i."drain")))) \
+        - abs(ave(v."drain"))/2.0)
+extract name="sat_ss_lvdd_2d" 1/slope(maxslope(curve((v."gate"),log10(abs(i."drain")))))*1000
+extract name="Iminsat_lvdd_2d" min(curve(v."gate",abs(i."drain")))
+extract name="Imaxsat_lvdd_2d" max(curve(v."gate",abs(i."drain")))
+extract name="I0_sat_lvdd_2d"  y.val from curve(v."gate",abs(i."drain")) where x.val=0
+extract name="Ivt_sat_lvdd_2d" y.val from curve(v."gate",abs(i."drain")) where x.val=$sat_vt 
+
+
+output p.quantum band.temp con.band val.band band.par 
+save outf=./structures/low_vdd_2d.str master
+
+log off
+
+
+
+
+
+quit

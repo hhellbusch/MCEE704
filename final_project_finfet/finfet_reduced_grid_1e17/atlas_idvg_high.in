@@ -1,0 +1,61 @@
+
+init infile=./structures/input_structure.str
+
+############## MOSFET Calculation   ####################
+### BQP.N
+go atlas simflags="-P 1"
+
+set workFunc = 4.85
+set gamma=1.4
+set alpha=0.3
+
+#electrode name=bulk bottom
+
+material material=Silicon eg300=1.1245 affinity=4.05 permitti=11.9 	ml=0.7 mt1=0.7 mt2=0.7 nc300=2.8e19
+material material=Oxide eg300=8.05 affinity=1.00 permittivity=3.9 	ml=0.30 mt1=0.30 mt2=0.30 nc300=2.8e19 nv300=1.04e19 
+material material=Poly eg300=1.1245 affinity=4.05 permitti=11.9 
+
+contact name=gate work=$'workFunc'
+
+#fermi model
+#srh - shockley read hall recombination
+# hcte.el - non-local effects of energy balance stuff
+# print just tells it to list everything
+
+# fldmob evsatmod - Parallel field dependence with negative differential mobility
+#            the lateral electric field-dependent mobility mod
+# Setting  EVSATMOD=0 implements, the default model for silicon based upon the Caughey-
+#  Thomas field-dependent mobility model in Equation 3-311.
+
+model fermi bqp.n srh ni.fermi hcte.el bqp.ngamma=$gamma bqp.nalpha=$alpha evsatmod=0 fldmob print
+#model fermi srh ni.fermi  print
+
+method maxtrap=6 autonr nblockit=45 bicgst dvlimit=1.0
+
+
+#id vg characteristics
+solve init
+
+# high drain
+solve vdrain=0.01 name=drain vstep=0.005 vfinal=1
+save outf=./structures/high_vdd_off.str master
+
+log outf=./logs/vg_id_high.log
+solve vgate=0 name=gate vstep=0.05 vfinal=1.0
+
+extract name="sat_vt_hvdd" (xintercept(maxslope(curve(v."gate",abs(i."drain")^(1/2)))))
+extract name="sat_ss_hvdd" 1/slope(maxslope(curve((v."gate"),log10(abs(i."drain")))))*1000
+extract name="Iminsat_hvdd" min(curve(v."gate",abs(i."drain")))
+extract name="Imaxsat_hvdd" max(curve(v."gate",abs(i."drain")))
+extract name="I0_sat_hvdd"  y.val from curve(v."gate",abs(i."drain")) where x.val=0
+extract name="Ivt_sat_hvdd" y.val from curve(v."gate",abs(i."drain")) where x.val=$sat_vt 
+
+output p.quantum band.temp con.band val.band band.par 
+save outf=./structures/high_vdd_on.str master
+
+log off
+
+
+
+
+quit
