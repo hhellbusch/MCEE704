@@ -1,0 +1,170 @@
+#
+# class: mcee704
+# Author: henry hellbusch
+# purpose: simulate a short channel device
+# with high ids and an eta of at least 4.
+# 
+# node size -> 0.18 um
+# target vt = 0.2 volts
+# target xj = 0.1 um
+# target gate ox = 60 angstroms
+# 
+#
+
+
+go athena
+
+#
+line x loc=0.00 spac=0.1 
+line x loc=0.20 spac=0.01
+line x loc=0.35 spac=0.008
+line x loc=0.40 spac=0.001
+line x loc=0.45 spac=0.001
+line x loc=0.60 spac=0.0005
+#
+line y loc=0.0  spac=0.00001
+line y loc=0.005 spac=0.0001
+line y loc=0.02 spac=0.001
+line y loc=0.05 spac=0.005
+line y loc=0.4  spac=0.005
+line y loc=0.5  spac=0.01
+line y loc=0.7  spac=0.04
+line y loc=0.8  spac=0.05
+
+# used later to flip the thing
+
+set length = 0.7 
+
+init orientation=100 c.phos=1e14 space.mul=1.3
+
+
+#pwell formation including masking off of the nwell
+#
+diffus time=30 temp=1000 dryo2 press=1.00 hcl=3
+#
+etch oxide thick=0.02
+#
+#P-well Implant
+# 
+implant boron dose=8e12 energy=100 tilt=7 rotation=45 
+
+#
+diffus temp=950 time=100 weto2 hcl=3
+#
+#N-well implant not shown -
+#
+# welldrive starts here
+diffus time=50 temp=1000 t.rate=4.000 dryo2 press=0.10 hcl=3
+#
+diffus time=220 temp=1200 nitro press=1
+#
+diffus time=90 temp=1200 t.rate=-4.444 nitro press=1
+#
+etch oxide all
+#
+#sacrificial "cleaning" oxide
+diffus time=20 temp=1000 dryo2 press=1 hcl=3
+#
+etch oxide all
+#
+#gate oxide grown here:-
+diffus time=4.9 temp=925 dryo2 press=1.00 hcl=3
+structure outfile=./structures/$"length"/gate_ox_growth.str
+# Extract a design parameter 
+extract name="gateox" thickness oxide mat.occno=1 x.val=0.05
+
+#
+#vt adjust implant 
+#implant bf2 dose=2e12 energy=130 tilt=7 rotation=45
+#structure outfile=./structures/vt_adjust_implant_1.str
+implant bf2 dose=6.8e11 energy=15 tilt=7 rotation=45
+structure outfile=./structures/$"length"/vt_adjust_implant_2.str
+
+#retrograde it
+implant boron dose=8e12 energy=50 tilt=7 rotation=45
+structure outfile=./structures/$"length"/retrograde_1.str
+#implant boron dose=5e12 energy=60 tilt=7 rotation=45
+#structure outfile=./structures/retrograde_2.str
+
+#
+depo poly thick=0.2 divi=15 
+
+#from now on the situation is 2-D
+etch poly left p1.x=0.35
+structure outfile=./structures/$"length"/gate_define.str
+
+#do the mirror now - allows for asymmetric profiles
+
+
+etch right p1.x=($"length"/4+.4)
+structure outfile=./structures/$"length"/afterEtch.str
+structure mirror right
+structure outfile=./structures/$"length"/afterEtch_mirror.str
+
+
+#
+method fermi compress
+diffuse time=3 temp=900 nitro press=1.0
+structure outfile=./structures/$"length"/reox.str
+
+# lowly doped drain!
+implant phosphor dose=3e13 energy=20 tilt=7 rotation=45 
+structure outfile=./structures/$"length"/LDD.str
+
+#halo?
+implant arsenic dose=5e13 energy=15 tilt=30 rotation=0
+structure outfile=./structures/$"length"/halo_left.str
+implant arsenic dose=5e13 energy=15 tilt=-30 rotation=0
+structure outfile=./structures/$"length"/halo_right.str
+
+#
+depo oxide thick=0.040 divisions=8
+structure outfile=./structures/$"length"/teos.str
+etch oxide dry thick=0.040
+structure outfile=./structures/$"length"/sidewalls.str
+
+#form the s/d contact areas
+implant arsenic dose=6e15 energy=40 tilt=7 rotation=45 
+structure outfile=./structures/$"length"/source_drain.str
+
+
+
+
+method fermi compress
+diffuse time=1 temp=900 nitro press=1.0
+structure outfile=./structures/$"length"/source_drain_anneal.str
+
+
+# pattern s/d contact metal
+etch oxide left p1.x=0.3
+etch oxide right p1.x=0.59
+deposit alumin thick=0.03 divi=2
+etch alumin start x=0.28 y=0.22
+etch cont x=0.28 y=0
+etch cont x=(0.28+$"length"+0.15) y=0
+etch done x=(0.28+$"length"+0.15) y=0.22
+structure outfile=./structures/$"length"/metal.str
+
+# Extract design parameters
+
+# extract final S/D Xj
+extract name="nxj" xj silicon mat.occno=1 x.val=0.1 junc.occno=1
+
+# extract the N++ regions sheet resistance
+extract name="n++ sheet rho" sheet.res material="Silicon" mat.occno=1 x.val=0.05 region.occno=1
+
+# extract the sheet rho under the spacer, of the LDD region
+extract name="ldd sheet rho" sheet.res material="Silicon" \
+	mat.occno=1 x.val=0.32 region.occno=1
+
+# extract the surface conc under the channel.
+extract name="chan surf conc" surf.conc impurity="Net Doping" \
+	material="Silicon" mat.occno=1 x.val=0.45
+
+# extract the long chan Vt
+extract name="n1dvt" 1dvt ntype vb=0.0 qss=1e10 x.val=0.45
+structure outfile=./structures/$"length"/beforeEtch.str
+
+
+
+quit

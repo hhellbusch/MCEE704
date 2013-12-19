@@ -1,0 +1,26 @@
+gateox=60.0789 angstroms (0.00600789 um)  X.val=0.05
+
+nxj=0.120597 um from top of first Silicon layer  X.val=0.1
+
+n++ sheet rho=28.7458 ohm/square  X.val=0.05
+
+ldd sheet rho=49.1298 ohm/square  X.val=0.32
+
+chan surf conc=9.05525e+16 atoms/cm3  X.val=0.45
+
+n1dvt=0.351306 V  X.val=0.45
+
+vt1=0.217204 
+
+vt2=0.106512 
+
+ids_max=0.000688915 
+
+ids_vt=5.95926e-07 
+
+ids_off=2.65277e-08 
+
+eta=4.41447 
+
+ndibl=0.0582589 
+

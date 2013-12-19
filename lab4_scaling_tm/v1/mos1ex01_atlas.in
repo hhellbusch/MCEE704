@@ -1,0 +1,84 @@
+go athena
+init infile=./structures/beforeEtch.str
+
+set length = 0.18
+
+etch right p1.x=($"length"/4+.4)
+structure outfile=./structures/afterEtch.str
+structure mirror right
+structure outfile=./structures/afterEtch_mirror.str
+
+
+electrode name=gate x=0.5 y=0.1
+electrode name=source x=0.1
+electrode name=drain x=($length + .7)
+electrode name=substrate backside
+
+structure outfile=./structures/mos1ex01_0.str
+
+# plot the structure
+#tonyplot ./structures/mos1ex01_0.str -set mos1ex01_0.set
+
+############# Vt Test : Returns Vt, Beta and Theta ################
+go atlas simflags="-P 1"
+OUTPUT CON.BAND
+
+# set material models
+models cvt srh print  
+contact name=gate n.poly
+interface qf=3e10
+
+
+# get initial solution
+ 
+solve init
+
+method  newton trap 
+solve prev
+
+set vdd = 2
+set vg_step = 0.05
+
+# Bias the drain a bit...
+solve vdrain=0.025 vstep=0.025 vfinal=0.1 name=drain
+structure outfile=./structures/electrical_lowvdd_gate_off.str
+# Ramp the gate
+log outf=./logs/low_vdd_length_$"length".log master
+solve vgate=0 vstep=$"vg_step" vdrain=0.1 vfinal=$"vdd" name=gate cname=drain
+structure outfile=./structures/electrical_lowvdd_gate_on.str
+
+# extract device parameters
+extract name="vt1" (xintercept(maxslope(curve(abs(v."gate"),abs(i."drain")))) \
+        - abs(ave(v."drain"))/2.0)
+
+# now open a dummy log file...
+log off
+
+# Now start again and ramp the drain to 5 volts...
+solve init
+# Bias the drain to 5 volts......slowly at first....
+solve vdrain=0.025 vstep=0.025 vfinal=0.1 name=drain
+solve vdrain=0.25 vstep=0.05 vfinal=$"vdd" name=drain
+structure outfile=./structures/electrical_highvdd_gate_off.str
+
+# Ramp the gate again with another opened logfile...
+log outf=./logs/high_vdd_length_$"length".log master
+solve vgate=0 vstep=$"vg_step" vdrain=$"vdd" vfinal=$"vdd" name=gate cname=drain
+structure outfile=./structures/electrical_highvdd_gate_on.str
+
+# extract the next device parameter with the drain now at 5 volts....
+extract name="vt2" (xintercept(maxslope(curve(abs(v."gate"),abs(i."drain")^.5))))
+
+extract name="ids_max" max(abs(i."drain"))
+extract name="ids_vt" y.val from curve(abs(v."gate"), abs(i."drain")) where x.val=$"vt2"
+extract name="ids_off" y.val from curve(abs(v."gate"), abs(i."drain")) where x.val=0
+extract name="eta" abs(log10($"ids_max"/$"ids_off"))
+
+# Calculate a DIBL parameter....in V/V
+extract name="ndibl" ($"vt1"-$"vt2")/($"vdd"-0.1)
+log off
+
+tonyplot -overlay  ./logs/mos1ex04_1_length_$"length".log  ./logs/mos1ex04_2_length_$"length".log -set mos1ex04_log.set
+
+
+quit

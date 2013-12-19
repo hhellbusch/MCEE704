@@ -1,0 +1,124 @@
+go athena
+
+#
+line x loc=0.0 spac=0.1 
+line x loc=0.2 spac=0.01
+line x loc=0.35 spac=0.008
+line x loc=0.4 spac=0.001
+line x loc=0.5 spac=0.001
+#
+line y loc=0.0  spac=0.00001
+line y loc=0.005 spac=0.0001
+line y loc=0.02 spac=0.001
+line y loc=0.05 spac=0.005
+line y loc=0.4  spac=0.005
+line y loc=0.7  spac=0.04
+line y loc=0.8  spac=0.05
+#
+init orientation=100 c.phos=1e14 space.mul=1.4
+
+
+#pwell formation including masking off of the nwell
+#
+diffus time=30 temp=1000 dryo2 press=1.00 hcl=3
+#
+etch oxide thick=0.02
+#
+#P-well Implant
+# 
+implant boron dose=8e12 energy=100 pears 
+
+#
+diffus temp=950 time=100 weto2 hcl=3
+#
+#N-well implant not shown -
+#
+# welldrive starts here
+diffus time=50 temp=1000 t.rate=4.000 dryo2 press=0.10 hcl=3
+#
+diffus time=220 temp=1200 nitro press=1
+#
+diffus time=90 temp=1200 t.rate=-4.444 nitro press=1
+#
+etch oxide all
+#
+#sacrificial "cleaning" oxide
+diffus time=20 temp=1000 dryo2 press=1 hcl=3
+#
+etch oxide all
+#
+#gate oxide grown here:-
+diffus time=5 temp=925 dryo2 press=1.00 hcl=3
+structure outfile=./structures/gate_ox_growth.str
+# Extract a design parameter 
+extract name="gateox" thickness oxide mat.occno=1 x.val=0.05
+
+#
+#vt adjust implant 
+#try to get a bunch at the surface to reduce boron depletion
+implant boron dose=1e12 energy=25 pearson
+implant boron dose=1e12 energy=15 pearson
+structure outfile=./structures/vt_adjust_implant.str
+
+#retrograde the profile
+implant boron dose=9e12 energy=50 pearson
+structure outfile=./structures/punchthrough.str
+
+#
+depo poly thick=0.2 divi=15 
+
+#from now on the situation is 2-D
+etch poly left p1.x=0.35
+structure outfile=./structures/gate_define.str
+#
+method fermi compress
+diffuse time=3 temp=900 nitro press=1.0
+structure outfile=./structures/reox.str
+#
+implant phosphor dose=3e13 energy=20 pearson 
+structure outfile=./structures/LDD.str
+
+#
+depo oxide thick=0.040 divisions=8
+structure outfile=./structures/teos.str
+etch oxide dry thick=0.040
+structure outfile=./structures/sidewalls.str
+
+implant arsenic dose=5.0e15 energy=35 pearson 
+structure outfile=./structures/source_drain.str
+
+method fermi compress
+diffuse time=1 temp=900 nitro press=1.0
+structure outfile=./structures/source_drain_anneal.str
+
+# pattern s/d contact metal
+etch oxide left p1.x=0.3
+deposit alumin thick=0.03 divi=2
+etch alumin right p1.x=0.28
+structure outfile=./structures/metal.str
+
+# Extract design parameters
+
+# extract final S/D Xj
+extract name="nxj" xj silicon mat.occno=1 x.val=0.1 junc.occno=1
+
+# extract the N++ regions sheet resistance
+extract name="n++ sheet rho" sheet.res material="Silicon" mat.occno=1 x.val=0.05 region.occno=1
+
+# extract the sheet rho under the spacer, of the LDD region
+extract name="ldd sheet rho" sheet.res material="Silicon" \
+	mat.occno=1 x.val=0.3 region.occno=1
+
+# extract the surface conc under the channel.
+extract name="chan surf conc" surf.conc impurity="Net Doping" \
+	material="Silicon" mat.occno=1 x.val=0.45
+
+# extract a curve of conductance versus bias.
+extract start material="Polysilicon" mat.occno=1 \
+	bias=0.0 bias.step=0.2 bias.stop=2 x.val=0.45
+extract done name="sheet cond v bias" \
+	curve(bias,1dn.conduct material="Silicon" mat.occno=1  region.occno=1)\
+	outfile="extract.dat"
+
+structure outfile=./structures/beforeEtch.str
+quit

@@ -1,0 +1,1652 @@
+gateox=60.7907 angstroms (0.00607907 um)  X.val=0.05
+
+gateox=60.8171 angstroms (0.00608171 um)  X.val=0.05
+
+nxj=0.110172 um from top of first Silicon layer  X.val=0.1
+
+n++ sheet rho=32.9612 ohm/square  X.val=0.05
+
+ldd sheet rho=35.3588 ohm/square  X.val=0.3
+
+chan surf conc=8.6085e+16 atoms/cm3  X.val=0.45
+
+n1dvt=0.537086 V  X.val=0.49
+
+gateox=60.8172 angstroms (0.00608172 um)  X.val=0.05
+
+nxj=0.109821 um from top of first Silicon layer  X.val=0.1
+
+n++ sheet rho=32.9924 ohm/square  X.val=0.05
+
+ldd sheet rho=35.468 ohm/square  X.val=0.3
+
+chan surf conc=8.71857e+16 atoms/cm3  X.val=0.45
+
+n1dvt=0.540229 V  X.val=0.49
+
+gateox=60.8172 angstroms (0.00608172 um)  X.val=0.05
+
+nxj=0.109821 um from top of first Silicon layer  X.val=0.1
+
+n++ sheet rho=32.9924 ohm/square  X.val=0.05
+
+ldd sheet rho=35.468 ohm/square  X.val=0.3
+
+chan surf conc=8.71857e+16 atoms/cm3  X.val=0.45
+
+n1dvt=0.540229 V  X.val=0.49
+
+vt1=0.425203 
+
+vt2=0.341143 
+
+gateox=60.8172 angstroms (0.00608172 um)  X.val=0.05
+
+nxj=0.109821 um from top of first Silicon layer  X.val=0.1
+
+n++ sheet rho=32.9924 ohm/square  X.val=0.05
+
+ldd sheet rho=35.468 ohm/square  X.val=0.3
+
+chan surf conc=8.71857e+16 atoms/cm3  X.val=0.45
+
+n1dvt=0.540229 V  X.val=0.49
+
+vt1=0.425203 
+
+vt2=0.341143 
+
+ids_max=0.000561972 
+
+ids_vt=5.55239e-07 
+
+ids_off=4.41456e-11 
+
+eta=7.10483 
+
+ndibl=0.0442421 
+
+gateox=60.8172 angstroms (0.00608172 um)  X.val=0.05
+
+nxj=0.110065 um from top of first Silicon layer  X.val=0.1
+
+n++ sheet rho=32.9798 ohm/square  X.val=0.05
+
+ldd sheet rho=35.4525 ohm/square  X.val=0.3
+
+chan surf conc=3.99885e+16 atoms/cm3  X.val=0.45
+
+n1dvt=0.327497 V  X.val=0.49
+
+vt1=0.207909 
+
+vt2=0.104776 
+
+ids_max=0.000692132 
+
+ids_vt=5.58758e-07 
+
+ids_off=2.83781e-08 
+
+eta=4.38721 
+
+ndibl=0.0542805 
+
+gateox=60.8172 angstroms (0.00608172 um)  X.val=0.05
+
+nxj=0.109823 um from top of first Silicon layer  X.val=0.1
+
+n++ sheet rho=32.9811 ohm/square  X.val=0.05
+
+ldd sheet rho=35.454 ohm/square  X.val=0.3
+
+chan surf conc=4.03231e+16 atoms/cm3  X.val=0.45
+
+n1dvt=0.330705 V  X.val=0.49
+
+vt1=0.211385 
+
+vt2=0.108915 
+
+ids_max=0.000689685 
+
+ids_vt=5.82482e-07 
+
+ids_off=2.50752e-08 
+
+eta=4.43941 
+
+ndibl=0.0539316 
+
+gateox=60.8172 angstroms (0.00608172 um)  X.val=0.05
+
+nxj=0.11055 um from top of first Silicon layer  X.val=0.1
+
+n++ sheet rho=32.9772 ohm/square  X.val=0.05
+
+ldd sheet rho=35.4494 ohm/square  X.val=0.3
+
+chan surf conc=3.93182e+16 atoms/cm3  X.val=0.45
+
+n1dvt=0.320892 V  X.val=0.49
+
+vt1=0.200878 
+
+vt2=0.0960017 
+
+ids_max=0.000697136 
+
+ids_vt=5.39798e-07 
+
+ids_off=3.66142e-08 
+
+eta=4.27967 
+
+ndibl=0.0551981 
+
+gateox=60.8172 angstroms (0.00608172 um)  X.val=0.05
+
+nxj=0.101163 um from top of first Silicon layer  X.val=0.1
+
+n++ sheet rho=33.0276 ohm/square  X.val=0.05
+
+ldd sheet rho=35.5073 ohm/square  X.val=0.3
+
+chan surf conc=5.37389e+16 atoms/cm3  X.val=0.45
+
+n1dvt=0.408457 V  X.val=0.49
+
+vt1=0.298128 
+
+vt2=0.212376 
+
+ids_max=0.000629332 
+
+ids_vt=5.94526e-07 
+
+ids_off=1.46373e-09 
+
+eta=5.63342 
+
+ndibl=0.0451326 
+
+gateox=60.8172 angstroms (0.00608172 um)  X.val=0.05
+
+nxj=0.101371 um from top of first Silicon layer  X.val=0.1
+
+n++ sheet rho=33.0256 ohm/square  X.val=0.05
+
+ldd sheet rho=35.5049 ohm/square  X.val=0.3
+
+chan surf conc=5.30672e+16 atoms/cm3  X.val=0.45
+
+n1dvt=0.403666 V  X.val=0.49
+
+vt1=0.293259 
+
+vt2=0.206333 
+
+ids_max=0.000632779 
+
+ids_vt=5.61452e-07 
+
+ids_off=1.70894e-09 
+
+eta=5.56853 
+
+ndibl=0.0457505 
+
+gateox=60.7949 angstroms (0.00607949 um)  X.val=0.05
+
+nxj=0.101598 um from top of first Silicon layer  X.val=0.1
+
+n++ sheet rho=33.1071 ohm/square  X.val=0.05
+
+ldd sheet rho=35.7628 ohm/square  X.val=0.3
+
+chan surf conc=5.3596e+16 atoms/cm3  X.val=0.45
+
+n1dvt=0.389616 V  X.val=0.49
+
+vt1=0.27501 
+
+vt2=0.188957 
+
+ids_max=0.000631842 
+
+ids_vt=5.83239e-07 
+
+ids_off=2.84093e-09 
+
+eta=5.34715 
+
+ndibl=0.0452911 
+
+gateox=60.7949 angstroms (0.00607949 um)  X.val=0.05
+
+nxj=0.104508 um from top of first Silicon layer  X.val=0.1
+
+n++ sheet rho=33.0891 ohm/square  X.val=0.05
+
+ldd sheet rho=35.7421 ohm/square  X.val=0.3
+
+chan surf conc=4.78804e+16 atoms/cm3  X.val=0.45
+
+n1dvt=0.356475 V  X.val=0.49
+
+vt1=0.241928 
+
+vt2=0.150043 
+
+ids_max=0.00065666 
+
+ids_vt=5.281e-07 
+
+ids_off=8.22026e-09 
+
+eta=4.90246 
+
+ndibl=0.0483605 
+
+gateox=60.7949 angstroms (0.00607949 um)  X.val=0.05
+
+nxj=0.104509 um from top of first Silicon layer  X.val=0.1
+
+n++ sheet rho=33.0891 ohm/square  X.val=0.05
+
+ldd sheet rho=35.742 ohm/square  X.val=0.3
+
+chan surf conc=4.76055e+16 atoms/cm3  X.val=0.45
+
+n1dvt=0.355063 V  X.val=0.49
+
+vt1=0.240681 
+
+vt2=0.148739 
+
+ids_max=0.000657462 
+
+ids_vt=5.35752e-07 
+
+ids_off=8.54269e-09 
+
+eta=4.88628 
+
+ndibl=0.0483905 
+
+gateox=60.7949 angstroms (0.00607949 um)  X.val=0.05
+
+nxj=0.104518 um from top of first Silicon layer  X.val=0.1
+
+n++ sheet rho=33.0885 ohm/square  X.val=0.05
+
+ldd sheet rho=35.7413 ohm/square  X.val=0.3
+
+chan surf conc=4.54059e+16 atoms/cm3  X.val=0.45
+
+n1dvt=0.345167 V  X.val=0.49
+
+vt1=0.230505 
+
+vt2=0.137985 
+
+ids_max=0.000663911 
+
+ids_vt=5.95e-07 
+
+ids_off=1.16444e-08 
+
+eta=4.75599 
+
+ndibl=0.0486947 
+
+gateox=60.7949 angstroms (0.00607949 um)  X.val=0.05
+
+nxj=0.104528 um from top of first Silicon layer  X.val=0.1
+
+n++ sheet rho=33.0878 ohm/square  X.val=0.05
+
+ldd sheet rho=35.7404 ohm/square  X.val=0.3
+
+chan surf conc=4.26565e+16 atoms/cm3  X.val=0.45
+
+n1dvt=0.333189 V  X.val=0.49
+
+vt1=0.217299 
+
+vt2=0.123761 
+
+ids_max=0.000672047 
+
+ids_vt=6.31293e-07 
+
+ids_off=1.72307e-08 
+
+eta=4.5911 
+
+ndibl=0.0492305 
+
+gateox=60.8205 angstroms (0.00608205 um)  X.val=0.05
+
+nxj=0.106603 um from top of first Silicon layer  X.val=0.1
+
+n++ sheet rho=33.0807 ohm/square  X.val=0.05
+
+ldd sheet rho=35.8037 ohm/square  X.val=0.3
+
+chan surf conc=3.94771e+16 atoms/cm3  X.val=0.45
+
+n1dvt=0.313804 V  X.val=0.49
+
+vt1=0.195666 
+
+vt2=0.0978315 
+
+ids_max=0.000685718 
+
+ids_vt=5.49559e-07 
+
+ids_off=3.63463e-08 
+
+eta=4.27569 
+
+ndibl=0.0514918 
+
+gateox=60.8011 angstroms (0.00608011 um)  X.val=0.05
+
+nxj=0.10604 um from top of first Silicon layer  X.val=0.1
+
+n++ sheet rho=33.0807 ohm/square  X.val=0.05
+
+ldd sheet rho=35.7306 ohm/square  X.val=0.3
+
+chan surf conc=4.04111e+16 atoms/cm3  X.val=0.45
+
+n1dvt=0.320688 V  X.val=0.49
+
+vt1=0.20298 
+
+vt2=0.106658 
+
+ids_max=0.000682302 
+
+ids_vt=5.92949e-07 
+
+ids_off=2.80674e-08 
+
+eta=4.38577 
+
+ndibl=0.0506958 
+
+gateox=60.8011 angstroms (0.00608011 um)  X.val=0.05
+
+nxj=0.106029 um from top of first Silicon layer  X.val=0.1
+
+n++ sheet rho=33.0815 ohm/square  X.val=0.05
+
+ldd sheet rho=35.7315 ohm/square  X.val=0.3
+
+chan surf conc=4.31604e+16 atoms/cm3  X.val=0.45
+
+n1dvt=0.333269 V  X.val=0.49
+
+vt1=0.215835 
+
+vt2=0.120212 
+
+ids_max=0.000673983 
+
+ids_vt=6.28268e-07 
+
+ids_off=1.8736e-08 
+
+eta=4.55597 
+
+ndibl=0.0503279 
+
+gateox=60.8011 angstroms (0.00608011 um)  X.val=0.05
+
+nxj=0.106007 um from top of first Silicon layer  X.val=0.1
+
+n++ sheet rho=33.0829 ohm/square  X.val=0.05
+
+ldd sheet rho=35.7333 ohm/square  X.val=0.3
+
+chan surf conc=4.86585e+16 atoms/cm3  X.val=0.45
+
+n1dvt=0.35802 V  X.val=0.49
+
+vt1=0.242165 
+
+vt2=0.148618 
+
+ids_max=0.0006576 
+
+ids_vt=5.35711e-07 
+
+ids_off=8.47226e-09 
+
+eta=4.88996 
+
+ndibl=0.0492353 
+
+gateox=60.0789 angstroms (0.00600789 um)  X.val=0.05
+
+nxj=0.120493 um from top of first Silicon layer  X.val=0.1
+
+n++ sheet rho=33.0372 ohm/square  X.val=0.05
+
+ldd sheet rho=35.7653 ohm/square  X.val=0.3
+
+chan surf conc=3.89094e+16 atoms/cm3  X.val=0.45
+
+n1dvt=0.284753 V  X.val=0.49
+
+vt1=0.154538 
+
+vt2=0.038795 
+
+ids_max=0.000730297 
+
+ids_vt=6.07219e-07 
+
+ids_off=1.88962e-07 
+
+eta=3.58713 
+
+ndibl=0.0609174 
+
+gateox=60.0789 angstroms (0.00600789 um)  X.val=0.05
+
+nxj=0.120122 um from top of first Silicon layer  X.val=0.1
+
+n++ sheet rho=33.0355 ohm/square  X.val=0.05
+
+ldd sheet rho=35.7632 ohm/square  X.val=0.3
+
+chan surf conc=4.09182e+16 atoms/cm3  X.val=0.45
+
+n1dvt=0.287398 V  X.val=0.49
+
+vt1=0.154539 
+
+vt2=0.0367351 
+
+ids_max=0.000731151 
+
+ids_vt=6.14143e-07 
+
+ids_off=1.98744e-07 
+
+eta=3.56571 
+
+ndibl=0.0620021 
+
+gateox=60.0789 angstroms (0.00600789 um)  X.val=0.05
+
+nxj=0.120082 um from top of first Silicon layer  X.val=0.1
+
+n++ sheet rho=33.037 ohm/square  X.val=0.05
+
+ldd sheet rho=35.7651 ohm/square  X.val=0.3
+
+chan surf conc=4.6427e+16 atoms/cm3  X.val=0.45
+
+n1dvt=0.316965 V  X.val=0.49
+
+vt1=0.184241 
+
+vt2=0.0682038 
+
+ids_max=0.000712598 
+
+ids_vt=6.32413e-07 
+
+ids_off=7.82078e-08 
+
+eta=3.95959 
+
+ndibl=0.0610722 
+
+gateox=60.0789 angstroms (0.00600789 um)  X.val=0.05
+
+nxj=0.120001 um from top of first Silicon layer  X.val=0.1
+
+n++ sheet rho=33.04 ohm/square  X.val=0.05
+
+ldd sheet rho=35.7688 ohm/square  X.val=0.3
+
+chan surf conc=5.74586e+16 atoms/cm3  X.val=0.45
+
+n1dvt=0.371298 V  X.val=0.49
+
+vt1=0.241683 
+
+vt2=0.13137 
+
+ids_max=0.000676497 
+
+ids_vt=6.09534e-07 
+
+ids_off=1.22959e-08 
+
+eta=4.74051 
+
+ndibl=0.0580595 
+
+gateox=60.0789 angstroms (0.00600789 um)  X.val=0.05
+
+nxj=0.119253 um from top of first Silicon layer  X.val=0.1
+
+n++ sheet rho=33.0436 ohm/square  X.val=0.05
+
+ldd sheet rho=35.773 ohm/square  X.val=0.3
+
+chan surf conc=4.1861e+16 atoms/cm3  X.val=0.45
+
+n1dvt=0.33345 V  X.val=0.49
+
+vt1=0.206854 
+
+vt2=0.0988013 
+
+ids_max=0.000696698 
+
+ids_vt=5.42715e-07 
+
+ids_off=3.35666e-08 
+
+eta=4.31714 
+
+ndibl=0.0568698 
+
+gateox=60.0789 angstroms (0.00600789 um)  X.val=0.05
+
+nxj=0.118017 um from top of first Silicon layer  X.val=0.1
+
+n++ sheet rho=33.0472 ohm/square  X.val=0.05
+
+ldd sheet rho=35.7772 ohm/square  X.val=0.3
+
+chan surf conc=4.24923e+16 atoms/cm3  X.val=0.45
+
+n1dvt=0.337529 V  X.val=0.49
+
+vt1=0.212088 
+
+vt2=0.106114 
+
+ids_max=0.000691994 
+
+ids_vt=5.91916e-07 
+
+ids_off=2.71183e-08 
+
+eta=4.40684 
+
+ndibl=0.0557758 
+
+gateox=60.0789 angstroms (0.00600789 um)  X.val=0.05
+
+nxj=0.115219 um from top of first Silicon layer  X.val=0.1
+
+n++ sheet rho=33.7257 ohm/square  X.val=0.05
+
+ldd sheet rho=35.3698 ohm/square  X.val=0.3
+
+chan surf conc=4.24923e+16 atoms/cm3  X.val=0.45
+
+n1dvt=0.337529 V  X.val=0.49
+
+vt1=0.212778 
+
+vt2=0.108197 
+
+ids_max=0.000690999 
+
+ids_vt=6.04083e-07 
+
+ids_off=2.54152e-08 
+
+eta=4.43438 
+
+ndibl=0.0550426 
+
+gateox=60.0789 angstroms (0.00600789 um)  X.val=0.05
+
+nxj=0.122289 um from top of first Silicon layer  X.val=0.1
+
+n++ sheet rho=32.129 ohm/square  X.val=0.05
+
+ldd sheet rho=35.5088 ohm/square  X.val=0.3
+
+chan surf conc=4.24922e+16 atoms/cm3  X.val=0.45
+
+n1dvt=0.337529 V  X.val=0.49
+
+vt1=0.211162 
+
+vt2=0.10191 
+
+ids_max=0.000694282 
+
+ids_vt=5.57621e-07 
+
+ids_off=3.09212e-08 
+
+eta=4.35128 
+
+ndibl=0.0575011 
+
+gateox=60.0789 angstroms (0.00600789 um)  X.val=0.05
+
+nxj=0.12798 um from top of first Silicon layer  X.val=0.1
+
+n++ sheet rho=31.139 ohm/square  X.val=0.05
+
+ldd sheet rho=33.7315 ohm/square  X.val=0.3
+
+chan surf conc=4.24922e+16 atoms/cm3  X.val=0.45
+
+n1dvt=0.337529 V  X.val=0.49
+
+vt1=0.209725 
+
+vt2=0.0960079 
+
+ids_max=0.000701013 
+
+ids_vt=5.66997e-07 
+
+ids_off=3.73337e-08 
+
+eta=4.27363 
+
+ndibl=0.0598511 
+
+gateox=60.0789 angstroms (0.00600789 um)  X.val=0.05
+
+nxj=0.132184 um from top of first Silicon layer  X.val=0.1
+
+n++ sheet rho=30.3393 ohm/square  X.val=0.05
+
+ldd sheet rho=32.1925 ohm/square  X.val=0.3
+
+chan surf conc=4.24921e+16 atoms/cm3  X.val=0.45
+
+n1dvt=0.337529 V  X.val=0.49
+
+vt1=0.206793 
+
+vt2=0.0903817 
+
+ids_max=0.000707513 
+
+ids_vt=6.02642e-07 
+
+ids_off=4.42342e-08 
+
+eta=4.20398 
+
+ndibl=0.0612691 
+
+gateox=60.0789 angstroms (0.00600789 um)  X.val=0.05
+
+nxj=0.145535 um from top of first Silicon layer  X.val=0.1
+
+n++ sheet rho=28.306 ohm/square  X.val=0.05
+
+ldd sheet rho=31.3606 ohm/square  X.val=0.3
+
+chan surf conc=6.64331e+16 atoms/cm3  X.val=0.45
+
+n1dvt=0.499645 V  X.val=0.49
+
+vt1=0.376342 
+
+vt2=0.272699 
+
+ids_max=0.000601941 
+
+ids_vt=6.47547e-07 
+
+ids_off=3.04818e-10 
+
+eta=6.29551 
+
+ndibl=0.0545489 
+
+gateox=60.0789 angstroms (0.00600789 um)  X.val=0.05
+
+nxj=0.146116 um from top of first Silicon layer  X.val=0.1
+
+n++ sheet rho=28.298 ohm/square  X.val=0.05
+
+ldd sheet rho=31.3505 ohm/square  X.val=0.3
+
+chan surf conc=5.42166e+16 atoms/cm3  X.val=0.45
+
+n1dvt=0.426428 V  X.val=0.49
+
+vt1=0.294361 
+
+vt2=0.176684 
+
+ids_max=0.000660048 
+
+ids_vt=6.45924e-07 
+
+ids_off=3.82752e-09 
+
+eta=5.23666 
+
+ndibl=0.0619353 
+
+gateox=60.0789 angstroms (0.00600789 um)  X.val=0.05
+
+nxj=0.147565 um from top of first Silicon layer  X.val=0.1
+
+n++ sheet rho=28.2904 ohm/square  X.val=0.05
+
+ldd sheet rho=31.341 ohm/square  X.val=0.3
+
+chan surf conc=4.75863e+16 atoms/cm3  X.val=0.45
+
+n1dvt=0.378397 V  X.val=0.49
+
+vt1=0.243334 
+
+vt2=0.115007 
+
+ids_max=0.000696149 
+
+ids_vt=6.47063e-07 
+
+ids_off=2.1719e-08 
+
+eta=4.50586 
+
+ndibl=0.0675405 
+
+gateox=59.7163 angstroms (0.00597163 um)  X.val=0.05
+
+nxj=0.15597 um from top of first Silicon layer  X.val=0.1
+
+n++ sheet rho=25.2231 ohm/square  X.val=0.05
+
+ldd sheet rho=27.0962 ohm/square  X.val=0.3
+
+chan surf conc=4.72089e+16 atoms/cm3  X.val=0.45
+
+n1dvt=0.372089 V  X.val=0.49
+
+vt1=0.22819 
+
+vt2=0.0905985 
+
+ids_max=0.000720263 
+
+ids_vt=6.2341e-07 
+
+ids_off=4.59332e-08 
+
+eta=4.19536 
+
+ndibl=0.0724166 
+
+gateox=60.0789 angstroms (0.00600789 um)  X.val=0.05
+
+nxj=0.152988 um from top of first Silicon layer  X.val=0.1
+
+n++ sheet rho=25.2293 ohm/square  X.val=0.05
+
+ldd sheet rho=27.1041 ohm/square  X.val=0.3
+
+chan surf conc=4.83684e+16 atoms/cm3  X.val=0.45
+
+n1dvt=0.383006 V  X.val=0.49
+
+vt1=0.23979 
+
+vt2=0.106535 
+
+ids_max=0.000708024 
+
+ids_vt=6.28722e-07 
+
+ids_off=2.9214e-08 
+
+eta=4.38446 
+
+ndibl=0.0701342 
+
+gateox=60.0789 angstroms (0.00600789 um)  X.val=0.05
+
+nxj=0.151407 um from top of first Silicon layer  X.val=0.1
+
+n++ sheet rho=25.2338 ohm/square  X.val=0.05
+
+ldd sheet rho=27.1091 ohm/square  X.val=0.3
+
+chan surf conc=4.9143e+16 atoms/cm3  X.val=0.45
+
+n1dvt=0.387454 V  X.val=0.49
+
+vt1=0.245277 
+
+vt2=0.11439 
+
+ids_max=0.000702891 
+
+ids_vt=6.60361e-07 
+
+ids_off=2.30689e-08 
+
+eta=4.48386 
+
+ndibl=0.0688879 
+
+gateox=60.0789 angstroms (0.00600789 um)  X.val=0.05
+
+nxj=0.149655 um from top of first Silicon layer  X.val=0.1
+
+n++ sheet rho=25.2375 ohm/square  X.val=0.05
+
+ldd sheet rho=27.1132 ohm/square  X.val=0.3
+
+chan surf conc=4.74469e+16 atoms/cm3  X.val=0.45
+
+n1dvt=0.372288 V  X.val=0.49
+
+vt1=0.230807 
+
+vt2=0.099601 
+
+ids_max=0.000711421 
+
+ids_vt=5.70323e-07 
+
+ids_off=3.61422e-08 
+
+eta=4.29411 
+
+ndibl=0.0690558 
+
+gateox=60.0789 angstroms (0.00600789 um)  X.val=0.05
+
+nxj=0.147736 um from top of first Silicon layer  X.val=0.1
+
+n++ sheet rho=25.2434 ohm/square  X.val=0.05
+
+ldd sheet rho=27.1199 ohm/square  X.val=0.3
+
+chan surf conc=4.85306e+16 atoms/cm3  X.val=0.45
+
+n1dvt=0.378984 V  X.val=0.49
+
+vt1=0.238912 
+
+vt2=0.110753 
+
+ids_max=0.000704338 
+
+ids_vt=6.51206e-07 
+
+ids_off=2.60506e-08 
+
+eta=4.43196 
+
+ndibl=0.0674521 
+
+gateox=60.0789 angstroms (0.00600789 um)  X.val=0.05
+
+nxj=0.146338 um from top of first Silicon layer  X.val=0.1
+
+n++ sheet rho=25.2486 ohm/square  X.val=0.05
+
+ldd sheet rho=27.1257 ohm/square  X.val=0.3
+
+chan surf conc=4.97114e+16 atoms/cm3  X.val=0.45
+
+n1dvt=0.385742 V  X.val=0.49
+
+vt1=0.246764 
+
+vt2=0.121331 
+
+ids_max=0.000697493 
+
+ids_vt=6.6429e-07 
+
+ids_off=1.90479e-08 
+
+eta=4.56369 
+
+ndibl=0.0660174 
+
+gateox=60.0789 angstroms (0.00600789 um)  X.val=0.05
+
+nxj=0.14383 um from top of first Silicon layer  X.val=0.1
+
+n++ sheet rho=25.2599 ohm/square  X.val=0.05
+
+ldd sheet rho=27.1387 ohm/square  X.val=0.3
+
+chan surf conc=5.2345e+16 atoms/cm3  X.val=0.45
+
+n1dvt=0.401624 V  X.val=0.49
+
+vt1=0.265751 
+
+vt2=0.14826 
+
+ids_max=0.000681344 
+
+ids_vt=5.75068e-07 
+
+ids_off=9.26216e-09 
+
+eta=4.86665 
+
+ndibl=0.0618374 
+
+gateox=60.0789 angstroms (0.00600789 um)  X.val=0.05
+
+nxj=0.12793 um from top of first Silicon layer  X.val=0.1
+
+n++ sheet rho=27.0017 ohm/square  X.val=0.05
+
+ldd sheet rho=29.3487 ohm/square  X.val=0.3
+
+chan surf conc=5.48205e+16 atoms/cm3  X.val=0.45
+
+n1dvt=0.414932 V  X.val=0.49
+
+vt1=0.292466 
+
+vt2=0.191483 
+
+ids_max=0.000648428 
+
+ids_vt=5.96e-07 
+
+ids_off=2.70446e-09 
+
+eta=5.37978 
+
+ndibl=0.0531489 
+
+gateox=60.0789 angstroms (0.00600789 um)  X.val=0.05
+
+nxj=0.19434 um from top of first Silicon layer  X.val=0.1
+
+n++ sheet rho=20.8538 ohm/square  X.val=0.05
+
+ldd sheet rho=24.5788 ohm/square  X.val=0.3
+
+chan surf conc=3.95757e+17 atoms/cm3  X.val=0.45
+
+n1dvt=0.0256471 V  X.val=0.49
+
+vt1=-0.0762068 
+
+gateox=60.0789 angstroms (0.00600789 um)  X.val=0.05
+
+nxj=0.134847 um from top of first Silicon layer  X.val=0.1
+
+n++ sheet rho=25.5845 ohm/square  X.val=0.05
+
+ldd sheet rho=41.0005 ohm/square  X.val=0.32
+
+chan surf conc=5.48201e+16 atoms/cm3  X.val=0.45
+
+n1dvt=0.412701 V  X.val=0.45
+
+gateox=60.0789 angstroms (0.00600789 um)  X.val=0.05
+
+nxj=0.128023 um from top of first Silicon layer  X.val=0.1
+
+n++ sheet rho=26.5147 ohm/square  X.val=0.05
+
+ldd sheet rho=42.349 ohm/square  X.val=0.32
+
+chan surf conc=5.48204e+16 atoms/cm3  X.val=0.45
+
+n1dvt=0.412701 V  X.val=0.45
+
+vt1=0.292391 
+
+vt2=0.191096 
+
+ids_max=0.000648995 
+
+ids_vt=5.98548e-07 
+
+ids_off=2.7375e-09 
+
+eta=5.37489 
+
+ndibl=0.0533132 
+
+gateox=60.0789 angstroms (0.00600789 um)  X.val=0.05
+
+nxj=0.116647 um from top of first Silicon layer  X.val=0.1
+
+n++ sheet rho=28.3155 ohm/square  X.val=0.05
+
+ldd sheet rho=46.8478 ohm/square  X.val=0.32
+
+chan surf conc=5.48207e+16 atoms/cm3  X.val=0.45
+
+n1dvt=0.412701 V  X.val=0.45
+
+vt1=0.296757 
+
+vt2=0.202114 
+
+ids_max=0.000635951 
+
+ids_vt=5.55059e-07 
+
+ids_off=1.9515e-09 
+
+eta=5.51306 
+
+ndibl=0.0498121 
+
+gateox=60.0789 angstroms (0.00600789 um)  X.val=0.05
+
+nxj=0.113645 um from top of first Silicon layer  X.val=0.1
+
+n++ sheet rho=28.776 ohm/square  X.val=0.05
+
+ldd sheet rho=49.2165 ohm/square  X.val=0.32
+
+chan surf conc=5.48208e+16 atoms/cm3  X.val=0.45
+
+n1dvt=0.412701 V  X.val=0.45
+
+vt1=0.298025 
+
+vt2=0.204482 
+
+ids_max=0.000632311 
+
+ids_vt=5.70523e-07 
+
+ids_off=1.80709e-09 
+
+eta=5.54395 
+
+ndibl=0.0492332 
+
+vt1=0.296743 
+
+vt2=0.206796 
+
+ids_max=0.000636054 
+
+ids_vt=6.06698e-07 
+
+ids_off=1.70958e-09 
+
+eta=5.5706 
+
+ndibl=0.0473405 
+
+gateox=60.0789 angstroms (0.00600789 um)  X.val=0.05
+
+nxj=0.115481 um from top of first Silicon layer  X.val=0.1
+
+n++ sheet rho=28.7686 ohm/square  X.val=0.05
+
+ldd sheet rho=49.1964 ohm/square  X.val=0.32
+
+chan surf conc=5.25143e+16 atoms/cm3  X.val=0.45
+
+n1dvt=0.401903 V  X.val=0.45
+
+vt1=0.28364 
+
+vt2=0.191105 
+
+ids_max=0.000646884 
+
+ids_vt=6.03421e-07 
+
+ids_off=2.63749e-09 
+
+eta=5.38964 
+
+ndibl=0.0487026 
+
+gateox=60.0789 angstroms (0.00600789 um)  X.val=0.05
+
+nxj=0.12191 um from top of first Silicon layer  X.val=0.1
+
+n++ sheet rho=28.7469 ohm/square  X.val=0.05
+
+ldd sheet rho=49.1382 ohm/square  X.val=0.32
+
+chan surf conc=4.69309e+16 atoms/cm3  X.val=0.45
+
+n1dvt=0.372726 V  X.val=0.45
+
+vt1=0.246883 
+
+vt2=0.144078 
+
+ids_max=0.000677894 
+
+ids_vt=5.91096e-07 
+
+ids_off=9.57045e-09 
+
+eta=4.85023 
+
+ndibl=0.0541079 
+
+gateox=60.0789 angstroms (0.00600789 um)  X.val=0.05
+
+nxj=0.122071 um from top of first Silicon layer  X.val=0.1
+
+n++ sheet rho=28.7464 ohm/square  X.val=0.05
+
+ldd sheet rho=49.1369 ohm/square  X.val=0.32
+
+chan surf conc=4.69048e+16 atoms/cm3  X.val=0.45
+
+n1dvt=0.37233 V  X.val=0.45
+
+vt1=0.246327 
+
+vt2=0.143253 
+
+ids_max=0.00067843 
+
+ids_vt=5.95678e-07 
+
+ids_off=9.78724e-09 
+
+eta=4.84084 
+
+ndibl=0.0542495 
+
+gateox=60.0789 angstroms (0.00600789 um)  X.val=0.05
+
+nxj=0.125175 um from top of first Silicon layer  X.val=0.1
+
+n++ sheet rho=28.7383 ohm/square  X.val=0.05
+
+ldd sheet rho=49.1153 ohm/square  X.val=0.32
+
+chan surf conc=4.55116e+16 atoms/cm3  X.val=0.45
+
+n1dvt=0.363825 V  X.val=0.45
+
+vt1=0.234991 
+
+vt2=0.126604 
+
+ids_max=0.000688791 
+
+ids_vt=6.53353e-07 
+
+ids_off=1.52519e-08 
+
+eta=4.65476 
+
+ndibl=0.0570458 
+
+gateox=60.0789 angstroms (0.00600789 um)  X.val=0.05
+
+nxj=0.115942 um from top of first Silicon layer  X.val=0.1
+
+n++ sheet rho=28.7666 ohm/square  X.val=0.05
+
+ldd sheet rho=49.191 ohm/square  X.val=0.32
+
+chan surf conc=5.14839e+16 atoms/cm3  X.val=0.45
+
+n1dvt=0.397702 V  X.val=0.45
+
+vt1=0.278615 
+
+vt2=0.185106 
+
+ids_max=0.000650738 
+
+ids_vt=6.30735e-07 
+
+ids_off=3.09768e-09 
+
+eta=5.32237 
+
+ndibl=0.0492153 
+
+gateox=60.0789 angstroms (0.00600789 um)  X.val=0.05
+
+nxj=0.153345 um from top of first Silicon layer  X.val=0.1
+
+n++ sheet rho=28.6936 ohm/square  X.val=0.05
+
+ldd sheet rho=49.002 ohm/square  X.val=0.32
+
+chan surf conc=3.78625e+16 atoms/cm3  X.val=0.45
+
+n1dvt=0.309983 V  X.val=0.45
+
+vt1=0.164167 
+
+vt2=0.0230372 
+
+ids_max=0.000751751 
+
+ids_vt=6.73408e-07 
+
+ids_off=2.95296e-07 
+
+eta=3.40582 
+
+ndibl=0.0742788 
+
+gateox=60.0789 angstroms (0.00600789 um)  X.val=0.05
+
+nxj=0.119381 um from top of first Silicon layer  X.val=0.1
+
+n++ sheet rho=28.753 ohm/square  X.val=0.05
+
+ldd sheet rho=49.1537 ohm/square  X.val=0.32
+
+chan surf conc=4.57801e+16 atoms/cm3  X.val=0.45
+
+n1dvt=0.364244 V  X.val=0.45
+
+vt1=0.239748 
+
+vt2=0.138462 
+
+ids_max=0.000680256 
+
+ids_vt=6.20857e-07 
+
+ids_off=1.13464e-08 
+
+eta=4.77781 
+
+ndibl=0.0533084 
+
+gateox=60.0789 angstroms (0.00600789 um)  X.val=0.05
+
+vt1=0.239748 
+
+vt2=0.138462 
+
+ids_max=0.000680256 
+
+ids_vt=6.20857e-07 
+
+ids_off=1.13464e-08 
+
+eta=4.77781 
+
+ndibl=0.0533084 
+
+gateox=60.0789 angstroms (0.00600789 um)  X.val=0.05
+
+vt1=0.239748 
+
+vt2=0.138462 
+
+ids_max=0.000680256 
+
+ids_vt=6.20857e-07 
+
+ids_off=1.13464e-08 
+
+eta=4.77781 
+
+ndibl=0.0533084 
+
+gateox=60.0789 angstroms (0.00600789 um)  X.val=0.05
+
+nxj=0.120505 um from top of first Silicon layer  X.val=0.1
+
+n++ sheet rho=28.278 ohm/square  X.val=0.05
+
+ldd sheet rho=47.5151 ohm/square  X.val=0.32
+
+chan surf conc=4.5071e+16 atoms/cm3  X.val=0.45
+
+n1dvt=0.35942 V  X.val=0.45
+
+vt1=0.211561 
+
+vt2=0.0845812 
+
+ids_max=0.000722505 
+
+ids_vt=6.67462e-07 
+
+ids_off=5.80768e-08 
+
+eta=4.09484 
+
+ndibl=0.0668315 
+
+gateox=60.0789 angstroms (0.00600789 um)  X.val=0.05
+
+gateox=60.0789 angstroms (0.00600789 um)  X.val=0.05
+
+nxj=0.120958 um from top of first Silicon layer  X.val=0.1
+
+n++ sheet rho=28.6429 ohm/square  X.val=0.05
+
+ldd sheet rho=48.9023 ohm/square  X.val=0.32
+
+chan surf conc=1.39514e+17 atoms/cm3  X.val=0.45
+
+n1dvt=0.428495 V  X.val=0.45
+
+vt1=0.290688 
+
+vt2=0.175953 
+
+ids_max=0.000648505 
+
+ids_vt=6.30192e-07 
+
+ids_off=3.64953e-09 
+
+eta=5.24968 
+
+ndibl=0.0603868 
+
+gateox=60.0789 angstroms (0.00600789 um)  X.val=0.05
+
+nxj=0.114956 um from top of first Silicon layer  X.val=0.1
+
+n++ sheet rho=28.6639 ohm/square  X.val=0.05
+
+ldd sheet rho=48.9589 ohm/square  X.val=0.32
+
+chan surf conc=1.35483e+17 atoms/cm3  X.val=0.45
+
+n1dvt=0.448192 V  X.val=0.45
+
+vt1=0.320845 
+
+vt2=0.21792 
+
+ids_max=0.000623512 
+
+ids_vt=6.25679e-07 
+
+ids_off=1.14763e-09 
+
+eta=5.73504 
+
+ndibl=0.0541711 
+
+gateox=60.0789 angstroms (0.00600789 um)  X.val=0.05
+
+nxj=0.114959 um from top of first Silicon layer  X.val=0.1
+
+n++ sheet rho=28.6626 ohm/square  X.val=0.05
+
+ldd sheet rho=48.9538 ohm/square  X.val=0.32
+
+chan surf conc=1.05935e+17 atoms/cm3  X.val=0.45
+
+n1dvt=0.403637 V  X.val=0.45
+
+vt1=0.275398 
+
+vt2=0.170875 
+
+ids_max=0.000653301 
+
+ids_vt=6.43179e-07 
+
+ids_off=4.54312e-09 
+
+eta=5.15776 
+
+ndibl=0.0550121 
+
+gateox=60.0789 angstroms (0.00600789 um)  X.val=0.05
+
+nxj=0.128522 um from top of first Silicon layer  X.val=0.1
+
+n++ sheet rho=28.7077 ohm/square  X.val=0.05
+
+ldd sheet rho=49.1766 ohm/square  X.val=0.32
+
+chan surf conc=2.47725e+17 atoms/cm3  X.val=0.45
+
+n1dvt=0.891298 V  X.val=0.45
+
+vt1=0.810632 
+
+vt2=0.744244 
+
+ids_max=0.000298915 
+
+ids_vt=5.20882e-07 
+
+ids_off=1.13829e-13 
+
+eta=9.41929 
+
+ndibl=0.0349411 
+
+gateox=60.0789 angstroms (0.00600789 um)  X.val=0.05
+
+nxj=0.108071 um from top of first Silicon layer  X.val=0.1
+
+n++ sheet rho=28.716 ohm/square  X.val=0.05
+
+ldd sheet rho=49.1183 ohm/square  X.val=0.32
+
+chan surf conc=1.34974e+17 atoms/cm3  X.val=0.45
+
+n1dvt=0.549245 V  X.val=0.45
+
+vt1=0.443074 
+
+gateox=60.0789 angstroms (0.00600789 um)  X.val=0.05
+
+nxj=0.112059 um from top of first Silicon layer  X.val=0.1
+
+n++ sheet rho=28.6795 ohm/square  X.val=0.05
+
+ldd sheet rho=49.0047 ohm/square  X.val=0.32
+
+chan surf conc=1.12035e+17 atoms/cm3  X.val=0.45
+
+n1dvt=0.442699 V  X.val=0.45
+
+vt1=0.323979 
+
+vt2=0.23021 
+
+ids_max=0.000617012 
+
+ids_vt=6.32225e-07 
+
+ids_off=9.20788e-10 
+
+eta=5.82613 
+
+ndibl=0.0493521 
+
+gateox=60.0789 angstroms (0.00600789 um)  X.val=0.05
+
+nxj=0.1164 um from top of first Silicon layer  X.val=0.1
+
+n++ sheet rho=28.658 ohm/square  X.val=0.05
+
+ldd sheet rho=48.9438 ohm/square  X.val=0.32
+
+chan surf conc=1.05029e+17 atoms/cm3  X.val=0.45
+
+n1dvt=0.400514 V  X.val=0.45
+
+vt1=0.271586 
+
+vt2=0.165553 
+
+ids_max=0.000656476 
+
+ids_vt=6.31771e-07 
+
+ids_off=5.22124e-09 
+
+eta=5.09945 
+
+ndibl=0.0558068 
+
+gateox=60.0789 angstroms (0.00600789 um)  X.val=0.05
+
+nxj=0.14191 um from top of first Silicon layer  X.val=0.1
+
+n++ sheet rho=28.5991 ohm/square  X.val=0.05
+
+ldd sheet rho=48.7844 ohm/square  X.val=0.32
+
+chan surf conc=8.45805e+16 atoms/cm3  X.val=0.45
+
+n1dvt=0.290337 V  X.val=0.45
+
+vt1=0.13804 
+
+vt2=-0.00982888 
+
+ids_max=0.000760747 
+
+indicated value not found on curve
+
+ids_off=7.55844e-07 
+
+eta=3.00281 
+
+ndibl=0.0778257 
+
+gateox=60.0789 angstroms (0.00600789 um)  X.val=0.05
+
+nxj=0.13391 um from top of first Silicon layer  X.val=0.1
+
+n++ sheet rho=28.6114 ohm/square  X.val=0.05
+
+ldd sheet rho=48.8158 ohm/square  X.val=0.32
+
+chan surf conc=8.58102e+16 atoms/cm3  X.val=0.45
+
+n1dvt=0.304624 V  X.val=0.45
+
+vt1=0.15636 
+
+gateox=60.0789 angstroms (0.00600789 um)  X.val=0.05
+
+nxj=0.124142 um from top of first Silicon layer  X.val=0.1
+
+n++ sheet rho=28.6316 ohm/square  X.val=0.05
+
+ldd sheet rho=48.8694 ohm/square  X.val=0.32
+
+chan surf conc=8.85675e+16 atoms/cm3  X.val=0.45
+
+n1dvt=0.333357 V  X.val=0.45
+
+vt1=0.193301 
+
+vt2=0.0689606 
+
+ids_max=0.00071502 
+
+ids_vt=6.58384e-07 
+
+ids_off=8.31069e-08 
+
+eta=3.93468 
+
+ndibl=0.0654423 
+
+gateox=60.0789 angstroms (0.00600789 um)  X.val=0.05
+
+nxj=0.120597 um from top of first Silicon layer  X.val=0.1
+
+n++ sheet rho=28.6417 ohm/square  X.val=0.05
+
+ldd sheet rho=48.8973 ohm/square  X.val=0.32
+
+chan surf conc=9.05525e+16 atoms/cm3  X.val=0.45
+
+n1dvt=0.351306 V  X.val=0.45
+
+vt1=0.215014 
+
+vt2=0.0994335 
+
+ids_max=0.000697687 
+
+ids_vt=5.61286e-07 
+
+ids_off=3.58926e-08 
+
+eta=4.28866 
+
+ndibl=0.0608318 
+
+gateox=60.0789 angstroms (0.00600789 um)  X.val=0.05
+
+nxj=0.120597 um from top of first Silicon layer  X.val=0.1
+
+n++ sheet rho=28.2435 ohm/square  X.val=0.05
+
+ldd sheet rho=48.0021 ohm/square  X.val=0.32
+
+chan surf conc=9.05525e+16 atoms/cm3  X.val=0.45
+
+n1dvt=0.351306 V  X.val=0.45
+
+vt1=0.216176 
+
+vt2=0.0910478 
+
+ids_max=0.000724128 
+
+ids_vt=6.53327e-07 
+
+ids_off=5.06863e-08 
+
+eta=4.15492 
+
+ndibl=0.0658569 
+
+gateox=60.0789 angstroms (0.00600789 um)  X.val=0.05
+
+nxj=0.120597 um from top of first Silicon layer  X.val=0.1
+
+n++ sheet rho=28.2438 ohm/square  X.val=0.05
+
+ldd sheet rho=48.0034 ohm/square  X.val=0.32
+
+chan surf conc=9.83881e+16 atoms/cm3  X.val=0.45
+
+n1dvt=0.364452 V  X.val=0.45
+
+vt1=0.228809 
+
+vt2=0.1039 
+
+ids_max=0.000715637 
+
+ids_vt=6.34259e-07 
+
+ids_off=3.47495e-08 
+
+eta=4.31374 
+
+ndibl=0.0657416 
+
